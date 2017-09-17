@@ -1,16 +1,8 @@
-==> Downloading https://ftp.gnu.org/gnu/libunistring/libunistring-0.9.7.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/libunistring/0.9.7
-==> make
-==> make check
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libunistring`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libunistring/0.9.7: 54 files, 9.3MB, built in 4 minutes 48 seconds
-==> Determining libunistring bottle rebuild...
-==> Bottling libunistring-0.9.7.i686_linux.bottle.1.tar.gz...
-==> Detecting if libunistring-0.9.7.i686_linux.bottle.1.tar.gz is relocatable...
-./libunistring-0.9.7.i686_linux.bottle.1.tar.gz
+==> Determining openssl bottle rebuild...
+==> Bottling openssl-1.0.2l.i686_linux.bottle.1.tar.gz...
+./openssl-1.0.2l.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "d3b1d5e2f05282fd86478764211cb2f0fb6540b260615ab9d79a8c66197c5bc6" => :i686_linux
+    sha256 "411f0a1b7c282215df5c1bdb096d68cb09b095e69f30088c69ea122602fbd7b4" => :i686_linux
   end
