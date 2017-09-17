@@ -1,31 +1,15 @@
-==> Downloading http://download.oracle.com/berkeley-db/db-4.8.30.tar.gz
-==> Patching
-File dbinc/atomic.h is read-only; trying to patch anyway
-patching file dbinc/atomic.h
-==> ../dist/configure --disable-debug --prefix=/home/linuxbrew/.linuxbrew/Cellar/berkeley-db@4/4.8.30 --mandir=/home/linuxbrew/.linuxbrew/Cellar/berkeley-db@4/4.8.30/share/man --enable-cxx
+==> Downloading https://sqlite.org/2017/sqlite-autoconf-3200100.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/sqlite/3.20.1 --enable-dynamic-extensions --enable-readline --disable-editline
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall berkeley-db@4`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /home/linuxbrew/.linuxbrew,
-because this is an alternate version of another formula.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/berkeley-db@4/bin:$PATH"' >> ~/.bash_profile
-
-For compilers to find this software you may need to set:
-    LDFLAGS:  -L/home/linuxbrew/.linuxbrew/opt/berkeley-db@4/lib
-    CPPFLAGS: -I/home/linuxbrew/.linuxbrew/opt/berkeley-db@4/include
-
-
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/berkeley-db@4/4.8.30: 4,596 files, 82.6MB, built in 6 minutes 19 seconds
-==> Determining berkeley-db bottle rebuild...
-==> Bottling berkeley-db-6.2.32.i686_linux.bottle.1.tar.gz...
-==> Detecting if berkeley-db-6.2.32.i686_linux.bottle.1.tar.gz is relocatable...
-./berkeley-db-6.2.32.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall sqlite`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/sqlite/3.20.1: 12 files, 11.9MB, built in 4 minutes 41 seconds
+==> Determining sqlite bottle rebuild...
+==> Bottling sqlite-3.20.1.i686_linux.bottle.1.tar.gz...
+==> Detecting if sqlite-3.20.1.i686_linux.bottle.1.tar.gz is relocatable...
+./sqlite-3.20.1.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "95aa16f249e4035cbb1497469a1d26a0e4d214bcd7e85d5d29a7ba4df2521b0b" => :i686_linux
+    sha256 "fa1c590d17c9df6698869fc4bf8dd1f972acded8e18b47a6fee62141e2809674" => :i686_linux
   end
