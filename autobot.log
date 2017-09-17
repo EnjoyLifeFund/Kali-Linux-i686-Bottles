@@ -1,23 +1,7 @@
-==> Installing dependencies for expat: libbsd
-==> Installing expat dependency: libbsd
-==> Downloading https://libbsd.freedesktop.org/releases/libbsd-0.8.3.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/libbsd-0.8.3.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/libbsd/0.8.3
-==> make install
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libbsd/0.8.3: 83 files, 1.2MB, built in 29 seconds
-==> Installing expat
-==> Downloading https://downloads.sourceforge.net/project/expat/expat/2.2.4/expat-2.2.4.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/expat-2.2.4.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/expat/2.2.4 --mandir=/home/linuxbrew/.linuxbrew/Cellar/expat/2.2.4/share/man --with-libbsd
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall expat`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/expat/2.2.4: 19 files, 1.3MB, built in 39 seconds
-==> Determining expat bottle rebuild...
-==> Bottling expat-2.2.4.i686_linux.bottle.1.tar.gz...
-./expat-2.2.4.i686_linux.bottle.1.tar.gz
+==> Determining gdbm bottle rebuild...
+==> Bottling gdbm-1.13_1.i686_linux.bottle.1.tar.gz...
+./gdbm-1.13_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "98fd9999f9f2e373915d1c4322b3c994914c3965695b3fd1b981d72927247f78" => :i686_linux
+    sha256 "bd0ffc3319b5ee22088421ef9725c5aff00fb84f90b5aa3dae87d7bb42713847" => :i686_linux
   end
