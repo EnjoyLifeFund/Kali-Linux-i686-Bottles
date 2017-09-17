@@ -1,4 +1,14 @@
-==> Downloading https://downloads.sourceforge.net/project/lzmautils/xz-5.2.3.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/xz-5.2.3.tar.gz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3
-==> make check
+==> Downloading https://ftp.gnu.org/gnu/libtasn1/libtasn1-4.12.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libtasn1/4.12 --disable-silent-rules
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libtasn1`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/libtasn1/4.12: 60 files, 855.6KB, built in 1 minute 21 seconds
+==> Determining libtasn1 bottle rebuild...
+==> Bottling libtasn1-4.12.i686_linux.bottle.1.tar.gz...
+./libtasn1-4.12.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "55f56d710aae3f115d5a1e66522a772cdb346212e6fe661dd73abc1f61861749" => :i686_linux
+  end
