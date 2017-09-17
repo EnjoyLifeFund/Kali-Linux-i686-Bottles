@@ -1,28 +1,14 @@
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-001
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-002
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-003
-==> Patching
-==> Applying readline70-001
-patching file history.c
-patching file patchlevel
-==> Applying readline70-002
-patching file history.c
-patching file patchlevel
-==> Applying readline70-003
-patching file input.c
-patching file patchlevel
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/readline/7.0.3_1 --with-curses
-==> make install SHLIB_LIBS=-lcurses
+==> Downloading http://nixos.org/releases/patchelf/patchelf-0.9/patchelf-0.9.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/patchelf-0.9.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/patchelf/0.9_1 CXXFLAGS=-static-libgcc -static-libstdc++ --disable-silent-rules
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall readline`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/readline/7.0.3_1: 46 files, 2.9MB, built in 47 seconds
-==> Determining readline bottle rebuild...
-==> Bottling readline-7.0.3_1.i686_linux.bottle.1.tar.gz...
-==> Detecting if readline-7.0.3_1.i686_linux.bottle.1.tar.gz is relocatable...
-./readline-7.0.3_1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall patchelf`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/patchelf/0.9_1: 7 files, 617.6KB, built in 9 seconds
+==> Determining patchelf bottle rebuild...
+==> Bottling patchelf-0.9_1.i686_linux.bottle.1.tar.gz...
+./patchelf-0.9_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "e6168200abf5948de5604f9ab3977428726b16c3b2dfa01b7989fdf79eec5fdc" => :i686_linux
+    sha256 "1be971ac41e4d5051b28eac5420825ac0541344eb45c66906255b8e9491655ee" => :i686_linux
   end
