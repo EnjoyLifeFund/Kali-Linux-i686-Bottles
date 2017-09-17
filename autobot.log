@@ -1,17 +1,14 @@
-==> Downloading https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/gmp-6.1.2.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gmp/6.1.2 --enable-cxx ABI=32
-==> make
-==> make check
-==> make install
+==> Downloading https://github.com/lz4/lz4/archive/v1.8.0.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/lz4-1.8.0.tar.gz
+==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/lz4/1.8.0
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gmp`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/gmp/6.1.2: 20 files, 3.5MB, built in 4 minutes 37 seconds
-==> Determining gmp bottle rebuild...
-==> Bottling gmp-6.1.2.i686_linux.bottle.tar.gz...
-==> Detecting if gmp-6.1.2.i686_linux.bottle.tar.gz is relocatable...
-./gmp-6.1.2.i686_linux.bottle.tar.gz
+You can run it manually using `brew postinstall lz4`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/lz4/1.8.0: 22 files, 693.1KB, built in 8 seconds
+==> Determining lz4 bottle rebuild...
+==> Bottling lz4-1.8.0.i686_linux.bottle.1.tar.gz...
+./lz4-1.8.0.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "18ff71bce86d39ee1b5b22dc76df139015c6a75b4bde9dc04a417bbe2dd2c542" => :i686_linux
+    rebuild 1
+    sha256 "19e01bafc7efa732482817dfcec9f14bd9a2a0e95eb2790684a66acaefad580d" => :i686_linux
   end
