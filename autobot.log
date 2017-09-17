@@ -1,28 +1,60 @@
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0.tar.gz
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-001
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-002
-==> Downloading https://ftp.gnu.org/gnu/readline/readline-7.0-patches/readline70-003
+==> Downloading https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
+==> Downloading from https://iweb.dl.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/u/unzip/unzip_6.0-21.debian.tar.xz
 ==> Patching
-==> Applying readline70-001
-patching file history.c
-patching file patchlevel
-==> Applying readline70-002
-patching file history.c
-patching file patchlevel
-==> Applying readline70-003
-patching file input.c
-patching file patchlevel
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/readline/7.0.3_1 --with-curses
-==> make install SHLIB_LIBS=-lcurses
+==> Applying patches/01-manpages-in-section-1-not-in-section-1l.patch
+patching file man/funzip.1
+patching file man/unzip.1
+patching file man/unzipsfx.1
+patching file man/zipgrep.1
+patching file man/zipinfo.1
+==> Applying patches/02-this-is-debian-unzip.patch
+patching file unzip.c
+==> Applying patches/03-include-unistd-for-kfreebsd.patch
+patching file unix/unxcfg.h
+==> Applying patches/04-handle-pkware-verification-bit.patch
+patching file process.c
+==> Applying patches/05-fix-uid-gid-handling.patch
+patching file process.c
+==> Applying patches/06-initialize-the-symlink-flag.patch
+patching file process.c
+==> Applying patches/07-increase-size-of-cfactorstr.patch
+patching file list.c
+==> Applying patches/08-allow-greater-hostver-values.patch
+patching file zipinfo.c
+==> Applying patches/09-cve-2014-8139-crc-overflow.patch
+patching file extract.c
+==> Applying patches/10-cve-2014-8140-test-compr-eb.patch
+patching file extract.c
+==> Applying patches/11-cve-2014-8141-getzip64data.patch
+patching file fileio.c
+patching file process.c
+==> Applying patches/12-cve-2014-9636-test-compr-eb.patch
+patching file extract.c
+==> Applying patches/13-remove-build-date.patch
+patching file unix/unix.c
+==> Applying patches/14-cve-2015-7696.patch
+patching file crypt.c
+==> Applying patches/15-cve-2015-7697.patch
+patching file extract.c
+==> Applying patches/16-fix-integer-underflow-csiz-decrypted.patch
+patching file extract.c
+==> Applying patches/17-restore-unix-timestamps-accurately.patch
+patching file process.c
+==> Applying patches/18-cve-2014-9913-unzip-buffer-overflow.patch
+patching file list.c
+==> Applying patches/19-cve-2016-9844-zipinfo-buffer-overflow.patch
+patching file zipinfo.c
+==> make -f unix/Makefile CC=gcc-7 LOC=-DLARGE_FILE_SUPPORT D_USE_BZ2=-DUSE_BZIP2 L_BZ2=-lbz2 macosx
+==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/unzip/6.0_3 MANDIR=/home/linuxbrew/.linuxbrew/Cellar/unzip/6.0_3/share/man/man1 install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall readline`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/readline/7.0.3_1: 46 files, 2.9MB, built in 47 seconds
-==> Determining readline bottle rebuild...
-==> Bottling readline-7.0.3_1.i686_linux.bottle.1.tar.gz...
-==> Detecting if readline-7.0.3_1.i686_linux.bottle.1.tar.gz is relocatable...
-./readline-7.0.3_1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall unzip`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/unzip/6.0_3: 15 files, 455.7KB, built in 9 seconds
+==> Determining unzip bottle rebuild...
+==> Bottling unzip-6.0_3.i686_linux.bottle.1.tar.gz...
+./unzip-6.0_3.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "e6168200abf5948de5604f9ab3977428726b16c3b2dfa01b7989fdf79eec5fdc" => :i686_linux
+    sha256 "5123482577cc9ff7539fae2f8c855a10fe7e6cf58293b615723936b254382222" => :i686_linux
   end
