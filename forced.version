@@ -1,0 +1,11 @@
+## Under root access ##
+mkdir -p /home/linuxbrew
+ln -s -f /home/linuxbrew/.linuxbrew/Cellar  /usr/local/Cellar 
+ln -s -f /home/linuxbrew/.linuxbrew/Homebrew/Library  /usr/local/Library
+ln -s -f /home/linuxbrew/.linuxbrew/opt  /usr/local/opt ## -f : force
+
+## Version Control ##
+ln -s -f /usr/local/Cellar/berkeley-db /usr/local/Cellar/berkeley-db@4
+ln -s -f /usr/local/Cellar/openssl /usr/local/Cellar/openssl@1.1
+mkdir -p /usr/local/Cellar/berkeley-db
+mkdir -p /usr/local/Cellar/openssl
