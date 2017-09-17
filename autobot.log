@@ -1,14 +1,16 @@
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/libf/libffi/libffi_3.2.1.orig.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libffi/3.2.1
+==> Downloading http://isl.gforge.inria.fr/isl-0.18.tar.xz
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/isl/0.18 --with-gmp=system --with-gmp-prefix=/home/linuxbrew/.linuxbrew/opt/gmp
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libffi`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libffi/3.2.1: 17 files, 353.3KB, built in 28 seconds
-==> Determining libffi bottle rebuild...
-==> Bottling libffi-3.2.1.i686_linux.bottle.1.tar.gz...
-./libffi-3.2.1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall isl`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/isl/0.18: 81 files, 5.7MB, built in 1 minute 50 seconds
+==> Determining isl bottle rebuild...
+==> Bottling isl-0.18.i686_linux.bottle.1.tar.gz...
+==> Detecting if isl-0.18.i686_linux.bottle.1.tar.gz is relocatable...
+./isl-0.18.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "c9b3813f8c7394b1c523eef072c64be92f9435925322787a5f64fa702f8359c7" => :i686_linux
+    sha256 "f53607f56d2524a20d7b69824975f480faaad2d2a956d46e070470b365890e56" => :i686_linux
   end
