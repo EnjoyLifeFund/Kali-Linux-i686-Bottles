@@ -1,14 +1,15 @@
-==> Downloading https://github.com/lz4/lz4/archive/v1.8.0.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/lz4-1.8.0.tar.gz
-==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/lz4/1.8.0
+==> Downloading https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/m4-1.4.18.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/m4/1.4.18
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall lz4`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/lz4/1.8.0: 22 files, 693.1KB, built in 8 seconds
-==> Determining lz4 bottle rebuild...
-==> Bottling lz4-1.8.0.i686_linux.bottle.1.tar.gz...
-./lz4-1.8.0.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall m4`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/m4/1.4.18: 13 files, 982.0KB, built in 1 minute 20 seconds
+==> Determining m4 bottle rebuild...
+==> Bottling m4-1.4.18.i686_linux.bottle.1.tar.gz...
+./m4-1.4.18.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "19e01bafc7efa732482817dfcec9f14bd9a2a0e95eb2790684a66acaefad580d" => :i686_linux
+    sha256 "d0e74ccca210b451c959c126993d37717d54534acf72fbfa7d114dbf201ee61d" => :i686_linux
   end
