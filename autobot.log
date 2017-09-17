@@ -1,17 +1,16 @@
-==> Downloading https://github.com/ivmai/libatomic_ops/releases/download/v7.4.6/libatomic_ops-7.4.6.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/libatomic_ops-7.4.6.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libatomic_ops/7.4.6
+==> Downloading http://www.hboehm.info/gc/gc_source/gc-7.6.0.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/bdw-gc-7.6.0.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/bdw-gc/7.6.0 --enable-cplusplus
 ==> make
 ==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libatomic_ops`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libatomic_ops/7.4.6: 80 files, 739.4KB, built in 28 seconds
-==> Determining libatomic_ops bottle rebuild...
-==> Bottling libatomic_ops-7.4.6.i686_linux.bottle.1.tar.gz...
-./libatomic_ops-7.4.6.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall bdw-gc`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/bdw-gc/7.6.0: 73 files, 2.7MB, built in 39 seconds
+==> Determining bdw-gc bottle rebuild...
+==> Bottling bdw-gc-7.6.0.i686_linux.bottle.1.tar.gz...
+./bdw-gc-7.6.0.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "4dd2f2d5ff5446f63c9580a6b0f9f2ee641f6e6104703faa5f74c9849887e476" => :i686_linux
+    sha256 "1f7806ffd0729ad0b9b9f23c70af3d71266ae6f96706cffcc24dbbaef47df137" => :i686_linux
   end
