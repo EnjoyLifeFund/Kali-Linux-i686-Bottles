@@ -1,14 +1,15 @@
-==> Downloading http://nixos.org/releases/patchelf/patchelf-0.9/patchelf-0.9.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/patchelf-0.9.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/patchelf/0.9_1 CXXFLAGS=-static-libgcc -static-libstdc++ --disable-silent-rules
+==> Downloading https://rsync.samba.org/ftp/rsync/rsync-3.1.2.tar.gz
+==> ./prepare-source
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/rsync/3.1.2 --with-rsyncd-conf=/home/linuxbrew/.linuxbrew/etc/rsyncd.conf --enable-ipv6
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall patchelf`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/patchelf/0.9_1: 7 files, 617.6KB, built in 9 seconds
-==> Determining patchelf bottle rebuild...
-==> Bottling patchelf-0.9_1.i686_linux.bottle.1.tar.gz...
-./patchelf-0.9_1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall rsync`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/rsync/3.1.2: 9 files, 890.5KB, built in 55 seconds
+==> Determining rsync bottle rebuild...
+==> Bottling rsync-3.1.2.i686_linux.bottle.1.tar.gz...
+./rsync-3.1.2.i686_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "1be971ac41e4d5051b28eac5420825ac0541344eb45c66906255b8e9491655ee" => :i686_linux
+    sha256 "c9c0fb964a8dde7b45f6c67e934054e9ffcd881bb1ec65ae56770a2e67ae99f1" => :i686_linux
   end
