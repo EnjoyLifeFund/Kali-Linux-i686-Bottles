@@ -1,0 +1,8 @@
+==> Determining libtool bottle rebuild...
+==> Bottling libtool-2.4.6_2.i686_linux.bottle.1.tar.gz...
+./libtool-2.4.6_2.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "246173571e06d14c35101a6b5cb19f2c80ac1076cfc54348f7c62c23ed30baeb" => :i686_linux
+  end
