@@ -1,23 +1,17 @@
-==> Downloading https://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/libtool-2.4.6.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libtool/2.4.6_2  --enable-ltdl-install
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/libtool/01.configure:
-checking build system type... i686-pc-linux-gnu
-checking host system type... i686-pc-linux-gnu
-configure: autobuild project... GNU Libtool
-configure: autobuild revision... 2.4.6
-configure: autobuild hostname... kali
-configure: autobuild mode... default
-configure: autobuild timestamp... 20170917T124428Z
-checking for gcc... cc
-checking whether the C compiler works... yes
-checking for C compiler default output file name... a.out
-checking for suffix of executables... 
-checking whether we are cross compiling... configure: error: in `/tmp/libtool-20170917-23814-1ocnpov/libtool-2.4.6':
-configure: error: cannot run C compiled programs.
-If you meant to cross compile, use `--host'.
-See `config.log' for more details
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://github.com/ivmai/libatomic_ops/releases/download/v7.4.6/libatomic_ops-7.4.6.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/libatomic_ops-7.4.6.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libatomic_ops/7.4.6
+==> make
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libatomic_ops`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/libatomic_ops/7.4.6: 80 files, 739.4KB, built in 28 seconds
+==> Determining libatomic_ops bottle rebuild...
+==> Bottling libatomic_ops-7.4.6.i686_linux.bottle.1.tar.gz...
+./libatomic_ops-7.4.6.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "4dd2f2d5ff5446f63c9580a6b0f9f2ee641f6e6104703faa5f74c9849887e476" => :i686_linux
+  end
