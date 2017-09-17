@@ -1,0 +1,14 @@
+==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/autoconf-2.69.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69 --with-lispdir=/home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/emacs/site-lisp/autoconf
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall autoconf`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69: 67 files, 3MB, built in 16 seconds
+==> Determining autoconf bottle rebuild...
+==> Bottling autoconf-2.69.i686_linux.bottle.tar.gz...
+./autoconf-2.69.i686_linux.bottle.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "8d2b35d5af6b15e5b781b218c6f0f258ddc07ba944d1a9b6223732309516c5c0" => :i686_linux
+  end
