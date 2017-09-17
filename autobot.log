@@ -1,16 +1,4 @@
-==> Downloading https://pkgconfig.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/pkg-config-0.29.2.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pkg-config/0.29.2_1 --disable-host-tool --with-internal-glib --with-pc-path=/home/linuxbrew/.linuxbrew/lib/pkgconfig:/home/linuxbrew/.linuxbrew/share/pkgconfig:/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/os/linux/pkgconfig
-==> make
+==> Downloading https://downloads.sourceforge.net/project/lzmautils/xz-5.2.3.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/xz-5.2.3.tar.gz
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/xz/5.2.3
 ==> make check
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pkg-config`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/pkg-config/0.29.2_1: 11 files, 1.5MB, built in 1 minute 36 seconds
-==> Determining pkg-config bottle rebuild...
-==> Bottling pkg-config-0.29.2_1.i686_linux.bottle.1.tar.gz...
-./pkg-config-0.29.2_1.i686_linux.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "02a01f25c9e3d10c85fc5f77c2f9886587b57df5fd39647db85193af8b1f2acb" => :i686_linux
-  end
