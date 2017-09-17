@@ -1,14 +1,17 @@
-==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.15.1.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/automake/1.15.1
+==> Downloading https://gmplib.org/download/gmp/gmp-6.1.2.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/gmp-6.1.2.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gmp/6.1.2 --enable-cxx ABI=32
+==> make
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall automake`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/automake/1.15.1: 131 files, 3MB, built in 13 seconds
-==> Determining automake bottle rebuild...
-==> Bottling automake-1.15.1.i686_linux.bottle.1.tar.gz...
-./automake-1.15.1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall gmp`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gmp/6.1.2: 20 files, 3.5MB, built in 4 minutes 37 seconds
+==> Determining gmp bottle rebuild...
+==> Bottling gmp-6.1.2.i686_linux.bottle.tar.gz...
+==> Detecting if gmp-6.1.2.i686_linux.bottle.tar.gz is relocatable...
+./gmp-6.1.2.i686_linux.bottle.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "306e3e2a7b653d5a63dd710c9c56b6b6ba93b2e05a9ac2d258d49cd7b913e465" => :i686_linux
+    sha256 "18ff71bce86d39ee1b5b22dc76df139015c6a75b4bde9dc04a417bbe2dd2c542" => :i686_linux
   end
