@@ -1,29 +1,8 @@
-==> Installing dependencies for libxslt: libxml2
-==> Installing libxslt dependency: libxml2
-==> Downloading http://xmlsoft.org/sources/libxml2-2.9.5.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/libxml2-2.9.5.tar.gz
-==> autoreconf
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.5 --without-python --without-lzma
-==> make
-==> make install
-==> python setup.py install --prefix=/home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.5
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/libxml2/05.python:
-running build
-running build_py
-creating build
-creating build/lib.linux-i686-2.7
-copying libxml2.py -> build/lib.linux-i686-2.7
-copying drv_libxml2.py -> build/lib.linux-i686-2.7
-running build_ext
-building 'libxml2mod' extension
-creating build/temp.linux-i686-2.7
-gcc-7 -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-7YtIgg/python2.7-2.7.13=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -D_REENTRANT=1 -I/home/linuxbrew/.linuxbrew/Cellar/libxml2/2.9.5/include/libxml2 -I/usr/include -I/usr/include/python2.7 -c libxml2-py.c -o build/temp.linux-i686-2.7/libxml2-py.o
-libxml2-py.c:3:10: fatal error: Python.h: No such file or directory
- #include <Python.h>
-          ^~~~~~~~~~
-compilation terminated.
-error: command 'gcc-7' failed with exit status 1
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Determining libiconv bottle rebuild...
+==> Bottling libiconv-1.15.i686_linux.bottle.1.tar.gz...
+==> Detecting if libiconv-1.15.i686_linux.bottle.1.tar.gz is relocatable...
+./libiconv-1.15.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "6aba40f65de078e3bacee6a7fbbafd3e53e0ac82f68b94ef48eb1646d69127bd" => :i686_linux
+  end
