@@ -1,15 +1,16 @@
-==> Downloading https://sqlite.org/2017/sqlite-autoconf-3200100.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/sqlite/3.20.1 --enable-dynamic-extensions --enable-readline --disable-editline
+==> Downloading https://pkgconfig.freedesktop.org/releases/pkg-config-0.29.2.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/pkg-config-0.29.2.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pkg-config/0.29.2_1 --disable-host-tool --with-internal-glib --with-pc-path=/home/linuxbrew/.linuxbrew/lib/pkgconfig:/home/linuxbrew/.linuxbrew/share/pkgconfig:/home/linuxbrew/.linuxbrew/Homebrew/Library/Homebrew/os/linux/pkgconfig
+==> make
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall sqlite`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/sqlite/3.20.1: 12 files, 11.9MB, built in 4 minutes 41 seconds
-==> Determining sqlite bottle rebuild...
-==> Bottling sqlite-3.20.1.i686_linux.bottle.1.tar.gz...
-==> Detecting if sqlite-3.20.1.i686_linux.bottle.1.tar.gz is relocatable...
-./sqlite-3.20.1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall pkg-config`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/pkg-config/0.29.2_1: 11 files, 1.5MB, built in 1 minute 36 seconds
+==> Determining pkg-config bottle rebuild...
+==> Bottling pkg-config-0.29.2_1.i686_linux.bottle.1.tar.gz...
+./pkg-config-0.29.2_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "fa1c590d17c9df6698869fc4bf8dd1f972acded8e18b47a6fee62141e2809674" => :i686_linux
+    sha256 "02a01f25c9e3d10c85fc5f77c2f9886587b57df5fd39647db85193af8b1f2acb" => :i686_linux
   end
