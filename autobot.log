@@ -1,8 +1,16 @@
-==> Determining python3 bottle rebuild...
-==> Bottling python3-3.6.2.i686_linux.bottle.1.tar.gz...
-==> Detecting if python3-3.6.2.i686_linux.bottle.1.tar.gz is relocatable...
-./python3-3.6.2.i686_linux.bottle.1.tar.gz
+==> Downloading ftp://sourceware.org/pub/valgrind/valgrind-3.13.0.tar.bz2
+Already downloaded: /home/kali/.cache/Homebrew/valgrind-3.13.0.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/valgrind/3.13.0
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall valgrind`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/valgrind/3.13.0: 311 files, 125.9MB, built in 5 minutes 50 seconds
+==> Determining valgrind bottle rebuild...
+==> Bottling valgrind-3.13.0.i686_linux.bottle.1.tar.gz...
+==> Detecting if valgrind-3.13.0.i686_linux.bottle.1.tar.gz is relocatable...
+./valgrind-3.13.0.i686_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "fdbbfd6f73c63193496f52d40cec2e223bbb43919fd27f6cedd2de72f52ae428" => :i686_linux
+    sha256 "1fedcdb6468fbe1194d3deb6d4c96db0efd34cb17fd52267c067950a7ea488f7" => :i686_linux
   end
