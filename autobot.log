@@ -1,15 +1,4 @@
-==> Downloading https://ftp.gnu.org/gnu/gettext/gettext-0.19.8.1.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/gettext/0.19.8.1  --with-included-glib --with-included-libcroco --with-included-libunistring --with-emacs --with-lispdir=/home/linuxbrew/.linuxbrew/Cellar/gettext/0.19.8.1/share/emacs/site-lisp/gettext --disable-java --disable-csharp --without-git --without-cvs --without-xz
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gettext`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/gettext/0.19.8.1: 1,927 files, 26.7MB, built in 7 minutes 47 seconds
-==> Determining gettext bottle rebuild...
-==> Bottling gettext-0.19.8.1.i686_linux.bottle.1.tar.gz...
-==> Detecting if gettext-0.19.8.1.i686_linux.bottle.1.tar.gz is relocatable...
-./gettext-0.19.8.1.i686_linux.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "606701b84e9af6724b2887356d84f01a3b689aaae0535cc7dfe7cc44f633cd44" => :i686_linux
-  end
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=hadoop/common/hadoop-2.8.1/hadoop-2.8.1.tar.gz
+==> Best Mirror http://apache.mesi.com.ar/hadoop/common/hadoop-2.8.1/hadoop-2.8.1.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/hadoop/2.8.1: 25,233 files, 2.1GB, built in 21 minutes 2 seconds
+This formula doesn't require compiling.
