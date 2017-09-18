@@ -1,20 +1,8 @@
-==> Downloading http://xmlsoft.org/sources/libxslt-1.1.29.tar.gz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/libxslt/1.1.29 --without-crypto --with-libxml-prefix=/home/linuxbrew/.linuxbrew/opt/libxml2
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libxslt`
-==> Caveats
-To allow the nokogiri gem to link against this libxslt run:
-  gem install nokogiri -- --with-xslt-dir=/home/linuxbrew/.linuxbrew/opt/libxslt
-
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libxslt/1.1.29: 139 files, 5.2MB, built in 1 minute 11 seconds
-==> Determining libxslt bottle rebuild...
-==> Bottling libxslt-1.1.29.i686_linux.bottle.1.tar.gz...
-==> Detecting if libxslt-1.1.29.i686_linux.bottle.1.tar.gz is relocatable...
-./libxslt-1.1.29.i686_linux.bottle.1.tar.gz
+==> Determining python bottle rebuild...
+==> Bottling python-2.7.13_1.i686_linux.bottle.1.tar.gz...
+==> Detecting if python-2.7.13_1.i686_linux.bottle.1.tar.gz is relocatable...
+./python-2.7.13_1.i686_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "e6a81e6414c014ea7d8836f17c4822dfc3ad0485c59970cd6ae1ca1f2beebadc" => :i686_linux
+    sha256 "76103189ebc6923bfe9b76595b1e0a5721c04c8a319d0f333e6ed6302ba4f0a1" => :i686_linux
   end
