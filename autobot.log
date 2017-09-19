@@ -1,0 +1,8 @@
+==> Determining linuxbrew/xorg/damageproto bottle rebuild...
+==> Bottling damageproto-1.2.1.i686_linux.bottle.1.tar.gz...
+./damageproto-1.2.1.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "8eeb7dd9446cce6def766439f5bab4bd7a3c1095b0acd909639168817ab06ead" => :i686_linux
+  end
