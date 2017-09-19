@@ -1,8 +1,1 @@
-==> Determining linuxbrew/xorg/xproto bottle rebuild...
-==> Bottling xproto-7.0.31.i686_linux.bottle.1.tar.gz...
-./xproto-7.0.31.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "1f8b8e2b51db7911af9c4c1cb573ca9c8bb5e7f254bd85e98089d1bab2bc2213" => :i686_linux
-  end
+This formula doesn't require compiling.
