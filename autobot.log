@@ -1,16 +1,8 @@
-==> Downloading https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.1.tar.bz2
-==> ./configure --disable-silent-rules --enable-static --prefix=/home/linuxbrew/.linuxbrew/Cellar/libgcrypt/1.8.1 --disable-asm --with-libgpg-error-prefix=/home/linuxbrew/.linuxbrew/opt/libgpg-error --disable-jent-support
-==> make
-==> make check
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libgcrypt`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libgcrypt/1.8.1: 21 files, 10.7MB, built in 7 minutes 22 seconds
-==> Determining libgcrypt bottle rebuild...
-==> Bottling libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz...
-==> Detecting if libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz is relocatable...
-./libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz
+==> Determining libtasn1 bottle rebuild...
+==> Bottling libtasn1-4.12.i686_linux.bottle.1.tar.gz...
+./libtasn1-4.12.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "d6ec6438030927d53482f0470573b9959519d9c1db76426719c9ff2271979498" => :i686_linux
+    sha256 "cea56093a5dbf3e89580d58eafd432a2feec0b8418c0da2faa34a73e320b9045" => :i686_linux
   end
