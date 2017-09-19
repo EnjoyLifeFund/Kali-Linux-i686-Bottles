@@ -1,1 +1,7 @@
-This formula doesn't require compiling.
+==> Determining libmpc bottle rebuild...
+==> Bottling libmpc-1.0.3_1.i686_linux.bottle.1.tar.gz...
+./libmpc-1.0.3_1.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "99a11e4480f48a38853359c2bde80561cf80463db03cd54a65a346aebf592f7b" => :i686_linux
+  end
