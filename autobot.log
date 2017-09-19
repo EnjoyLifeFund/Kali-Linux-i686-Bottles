@@ -1,7 +1,16 @@
-==> Determining libmpc bottle rebuild...
-==> Bottling libmpc-1.0.3_1.i686_linux.bottle.1.tar.gz...
-./libmpc-1.0.3_1.i686_linux.bottle.1.tar.gz
+==> Downloading https://savannah.nongnu.org/download/openexr/ilmbase-2.2.0.tar.gz
+==> Downloading from http://nongnu.askapache.com/openexr/ilmbase-2.2.0.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/ilmbase/2.2.0
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall ilmbase`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/ilmbase/2.2.0: 366 files, 14.4MB, built in 50 seconds
+==> Determining ilmbase bottle rebuild...
+==> Bottling ilmbase-2.2.0.i686_linux.bottle.4.tar.gz...
+==> Detecting if ilmbase-2.2.0.i686_linux.bottle.4.tar.gz is relocatable...
+./ilmbase-2.2.0.i686_linux.bottle.4.tar.gz
   bottle do
-    rebuild 1
-    sha256 "99a11e4480f48a38853359c2bde80561cf80463db03cd54a65a346aebf592f7b" => :i686_linux
+    cellar :any_skip_relocation
+    rebuild 4
+    sha256 "37022bff0f07568e7adea0afc0588154f927e6eb94a4d0aca1ec8ac48ce76ab3" => :i686_linux
   end
