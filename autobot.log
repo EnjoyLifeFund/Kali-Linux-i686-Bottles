@@ -1,14 +1,31 @@
-==> Downloading https://ftp.gnu.org/gnu/coreutils/coreutils-8.28.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/coreutils/8.28 --program-prefix=g --without-gmp
-==> make install
+==> Downloading http://www.docbook.org/xml/5.0/docbook-5.0.zip
+==> Downloading from http://docbook.org/xml/5.0/docbook-5.0.zip
+==> Downloading http://www.docbook.org/xml/4.2/docbook-xml-4.2.zip
+==> Downloading from http://docbook.org/xml/4.2/docbook-xml-4.2.zip
+==> Downloading http://www.docbook.org/xml/4.1.2/docbkx412.zip
+==> Downloading from http://docbook.org/xml/4.1.2/docbkx412.zip
+==> Downloading http://www.docbook.org/xml/4.3/docbook-xml-4.3.zip
+==> Downloading from http://docbook.org/xml/4.3/docbook-xml-4.3.zip
+==> Downloading http://www.docbook.org/xml/4.4/docbook-xml-4.4.zip
+==> Downloading from http://docbook.org/xml/4.4/docbook-xml-4.4.zip
+==> Downloading http://www.docbook.org/xml/4.5/docbook-xml-4.5.zip
+==> Downloading from http://docbook.org/xml/4.5/docbook-xml-4.5.zip
+==> Downloading http://www.docbook.org/xml/5.0/docbook-5.0.zip
+==> Downloading from http://docbook.org/xml/5.0/docbook-5.0.zip
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall coreutils`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/coreutils/8.28: 723 files, 29.9MB, built in 4 minutes 4 seconds
-==> Determining coreutils bottle rebuild...
-==> Bottling coreutils-8.28.i686_linux.bottle.1.tar.gz...
-==> Detecting if coreutils-8.28.i686_linux.bottle.1.tar.gz is relocatable...
-./coreutils-8.28.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall docbook`
+==> Caveats
+To use the DocBook package in your XML toolchain,
+you need to add the following to your ~/.bashrc:
+
+export XML_CATALOG_FILES="/home/linuxbrew/.linuxbrew/etc/xml/catalog"
+
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/docbook/5.0: 182 files, 4.7MB, built in 15 seconds
+==> Determining docbook bottle rebuild...
+==> Bottling docbook-5.0.i686_linux.bottle.tar.gz...
+./docbook-5.0.i686_linux.bottle.tar.gz
   bottle do
-    rebuild 1
-    sha256 "812c3c3a9739a025890c77ef7ae39f0448692b164a9923df41092e51f316d762" => :i686_linux
+    cellar :any_skip_relocation
+    sha256 "c8a71fe26032f68b86f40bd320245877338ac84c842350501264394e42b13376" => :i686_linux
   end
