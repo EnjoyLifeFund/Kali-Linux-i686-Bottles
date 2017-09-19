@@ -1,8 +1,0 @@
-==> Determining linuxbrew/xorg/xcmiscproto bottle rebuild...
-==> Bottling xcmiscproto-1.2.2.i686_linux.bottle.1.tar.gz...
-./xcmiscproto-1.2.2.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "b812959514dfde1c59d003783761fd90d488167104d7daae7230f01ad7c2d2e2" => :i686_linux
-  end
