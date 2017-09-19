@@ -1,8 +1,0 @@
-==> Determining linuxbrew/xorg/bigreqsproto bottle rebuild...
-==> Bottling bigreqsproto-1.1.2.i686_linux.bottle.1.tar.gz...
-./bigreqsproto-1.1.2.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "760088b3a67437bda4087df9be70fedb648e81145389ed0a74742c9100cb65c0" => :i686_linux
-  end
