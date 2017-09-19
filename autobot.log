@@ -1,0 +1,19 @@
+==> Downloading https://ftp.gnu.org/gnu/gsl/gsl-2.4.tar.gz
+Trying a mirror...
+==> Downloading https://ftpmirror.gnu.org/gsl/gsl-2.4.tar.gz
+==> Downloading from http://mirror.keystealth.org/gnu/gsl/gsl-2.4.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gsl/2.4
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall gsl`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gsl/2.4: 270 files, 25.3MB, built in 3 minutes 42 seconds
+==> Determining gsl bottle rebuild...
+==> Bottling gsl-2.4.i686_linux.bottle.1.tar.gz...
+==> Detecting if gsl-2.4.i686_linux.bottle.1.tar.gz is relocatable...
+./gsl-2.4.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "528602b9104ed26680f34458d0a5032c2aefe1e4b3537d3b22b2aa31066eb109" => :i686_linux
+  end
