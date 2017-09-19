@@ -1,1 +1,8 @@
-This formula doesn't require compiling.
+==> Determining linuxbrew/xorg/libxau bottle rebuild...
+==> Bottling libxau-1.0.8.i686_linux.bottle.1.tar.gz...
+./libxau-1.0.8.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "a876ed218a7ecfb0fddaf36e171801373b2ead906e9def6d48e1094f339de665" => :i686_linux
+  end
