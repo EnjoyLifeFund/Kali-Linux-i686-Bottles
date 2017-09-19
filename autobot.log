@@ -1,9 +1,16 @@
-==> Determining mpfr bottle rebuild...
-==> Bottling mpfr-3.1.6.i686_linux.bottle.1.tar.gz...
-==> Detecting if mpfr-3.1.6.i686_linux.bottle.1.tar.gz is relocatable...
-./mpfr-3.1.6.i686_linux.bottle.1.tar.gz
+==> Downloading http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/nasm/2.13.01
+==> make rdf
+==> make install install_rdf
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall nasm`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/nasm/2.13.01: 30 files, 4.2MB, built in 35 seconds
+==> Determining nasm bottle rebuild...
+==> Bottling nasm-2.13.01.i686_linux.bottle.1.tar.gz...
+==> Detecting if nasm-2.13.01.i686_linux.bottle.1.tar.gz is relocatable...
+./nasm-2.13.01.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "f8ad990e621d248fc3a059be7d7d3e32f1c03e846f9b86c2104d7b4c539a1268" => :i686_linux
+    sha256 "63b37d1409f174abb718f2297dc9ec94e51a48e208ec87bf3ec77405dbce6e98" => :i686_linux
   end
