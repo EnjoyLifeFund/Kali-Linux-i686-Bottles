@@ -1,25 +1,9 @@
-==> Downloading https://xorg.freedesktop.org/releases/individual/util/makedepend-1.0.5.tar.bz2
-Trying a mirror...
-==> Downloading http://xorg.mirrors.pair.com/individual/util/makedepend-1.0.5.tar.bz2
-==> Downloading https://xorg.freedesktop.org/releases/individual/proto/xproto-7.0.28.tar.gz
-Trying a mirror...
-==> Downloading http://xorg.mirrors.pair.com/individual/proto/xproto-7.0.28.tar.gz
-==> ./configure --disable-silent-rules --prefix=/tmp/makedepend-20170919-26970-ppv25r/makedepend-1.0.5/xproto
-==> make install
-==> Downloading https://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.0.tar.bz2
-Trying a mirror...
-==> Downloading http://xorg.mirrors.pair.com/individual/util/util-macros-1.19.0.tar.bz2
-==> ./configure --prefix=/tmp/makedepend-20170919-26970-ppv25r/makedepend-1.0.5/xorg-macros
-==> make install
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/makedepend/1.0.5
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall makedepend`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/makedepend/1.0.5: 8 files, 157.6KB, built in 36 seconds
-==> Determining makedepend bottle rebuild...
-==> Bottling makedepend-1.0.5.i686_linux.bottle.tar.gz...
-./makedepend-1.0.5.i686_linux.bottle.tar.gz
+==> Determining mpfr bottle rebuild...
+==> Bottling mpfr-3.1.6.i686_linux.bottle.1.tar.gz...
+==> Detecting if mpfr-3.1.6.i686_linux.bottle.1.tar.gz is relocatable...
+./mpfr-3.1.6.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "b1a5c0a2155c441262a085f851bf39d65edf2986b11aee1de7199f0bd513cfa1" => :i686_linux
+    rebuild 1
+    sha256 "f8ad990e621d248fc3a059be7d7d3e32f1c03e846f9b86c2104d7b4c539a1268" => :i686_linux
   end
