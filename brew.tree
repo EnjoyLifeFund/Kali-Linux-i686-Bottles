@@ -1,0 +1,433 @@
+apache-spark (required dependencies)
+
+autoconf (required dependencies)
+└── m4
+    └── xz
+
+automake (required dependencies)
+├── xz
+└── autoconf
+    └── m4
+        └── xz
+
+bdw-gc (required dependencies)
+├── pkg-config
+└── libatomic_ops
+
+berkeley-db (required dependencies)
+└── :jdk
+
+berkeley-db@4 (required dependencies)
+└── gpatch
+    └── xz
+
+bison (required dependencies)
+└── m4
+    └── xz
+
+bzip2 (required dependencies)
+
+curl (required dependencies)
+├── bzip2
+├── pkg-config
+└── openssl
+    ├── :perl
+    ├── gpatch
+    │   └── xz
+    └── zlib
+
+expat (required dependencies)
+├── bzip2
+└── libbsd
+    └── xz
+
+flex (required dependencies)
+├── help2man
+│   └── xz
+├── bison
+│   └── m4
+│       └── xz
+├── gettext
+│   ├── xz
+│   ├── libxml2
+│   │   ├── :python
+│   │   ├── autoconf
+│   │   │   └── m4
+│   │   │       └── xz
+│   │   ├── automake
+│   │   │   ├── xz
+│   │   │   └── autoconf
+│   │   │       └── m4
+│   │   │           └── xz
+│   │   ├── libtool
+│   │   │   ├── xz
+│   │   │   └── m4
+│   │   │       └── xz
+│   │   ├── pkg-config
+│   │   └── zlib
+│   └── ncurses
+│       ├── pkg-config
+│       ├── gpatch
+│       │   └── xz
+│       └── bzip2
+└── m4
+    └── xz
+
+gdbm (required dependencies)
+
+gettext (required dependencies)
+├── xz
+├── libxml2
+│   ├── :python
+│   ├── autoconf
+│   │   └── m4
+│   │       └── xz
+│   ├── automake
+│   │   ├── xz
+│   │   └── autoconf
+│   │       └── m4
+│   │           └── xz
+│   ├── libtool
+│   │   ├── xz
+│   │   └── m4
+│   │       └── xz
+│   ├── pkg-config
+│   └── zlib
+└── ncurses
+    ├── pkg-config
+    ├── gpatch
+    │   └── xz
+    └── bzip2
+
+gmp (required dependencies)
+├── xz
+└── m4
+    └── xz
+
+gpatch (required dependencies)
+└── xz
+
+gperf (required dependencies)
+
+hadoop (required dependencies)
+└── :jdk
+
+help2man (required dependencies)
+└── xz
+
+isl (required dependencies)
+├── xz
+└── gmp
+    ├── xz
+    └── m4
+        └── xz
+
+libatomic_ops (required dependencies)
+
+libbsd (required dependencies)
+└── xz
+
+libffi (required dependencies)
+
+libgpg-error (required dependencies)
+└── bzip2
+
+libiconv (required dependencies)
+├── gpatch
+│   └── xz
+└── gpatch
+    └── xz
+
+libmagic (required dependencies)
+└── :python
+
+libmpc (required dependencies)
+├── gmp
+│   ├── xz
+│   └── m4
+│       └── xz
+└── mpfr
+    ├── xz
+    └── gmp
+        ├── xz
+        └── m4
+            └── xz
+
+libtasn1 (required dependencies)
+
+libtool (required dependencies)
+├── xz
+└── m4
+    └── xz
+
+libunistring (required dependencies)
+└── xz
+
+libxml2 (required dependencies)
+├── :python
+├── autoconf
+│   └── m4
+│       └── xz
+├── automake
+│   ├── xz
+│   └── autoconf
+│       └── m4
+│           └── xz
+├── libtool
+│   ├── xz
+│   └── m4
+│       └── xz
+├── pkg-config
+└── zlib
+
+libxslt (required dependencies)
+└── libxml2
+    ├── :python
+    ├── autoconf
+    │   └── m4
+    │       └── xz
+    ├── automake
+    │   ├── xz
+    │   └── autoconf
+    │       └── m4
+    │           └── xz
+    ├── libtool
+    │   ├── xz
+    │   └── m4
+    │       └── xz
+    ├── pkg-config
+    └── zlib
+
+lz4 (required dependencies)
+
+m4 (required dependencies)
+└── xz
+
+mpfr (required dependencies)
+├── xz
+└── gmp
+    ├── xz
+    └── m4
+        └── xz
+
+ncurses (required dependencies)
+├── pkg-config
+├── gpatch
+│   └── xz
+└── bzip2
+
+openssl (required dependencies)
+├── :perl
+├── gpatch
+│   └── xz
+└── zlib
+
+openssl@1.1 (required dependencies)
+└── :perl
+
+parallel (required dependencies)
+└── bzip2
+
+patchelf (required dependencies)
+
+perl (required dependencies)
+├── xz
+├── gdbm
+├── berkeley-db
+│   └── :jdk
+└── expat
+    ├── bzip2
+    └── libbsd
+        └── xz
+
+pkg-config (required dependencies)
+
+python (required dependencies)
+├── xz
+├── pkg-config
+├── openssl
+│   ├── :perl
+│   ├── gpatch
+│   │   └── xz
+│   └── zlib
+├── bzip2
+├── ncurses
+│   ├── pkg-config
+│   ├── gpatch
+│   │   └── xz
+│   └── bzip2
+├── zlib
+├── readline
+│   ├── gpatch
+│   │   └── xz
+│   ├── gpatch
+│   │   └── xz
+│   ├── gpatch
+│   │   └── xz
+│   └── ncurses
+│       ├── pkg-config
+│       ├── gpatch
+│       │   └── xz
+│       └── bzip2
+├── sqlite
+│   ├── unzip
+│   │   ├── gpatch
+│   │   │   └── xz
+│   │   ├── xz
+│   │   └── bzip2
+│   └── readline
+│       ├── gpatch
+│       │   └── xz
+│       ├── gpatch
+│       │   └── xz
+│       ├── gpatch
+│       │   └── xz
+│       └── ncurses
+│           ├── pkg-config
+│           ├── gpatch
+│           │   └── xz
+│           └── bzip2
+├── gdbm
+└── berkeley-db@4
+    └── gpatch
+        └── xz
+
+python3 (required dependencies)
+├── xz
+├── pkg-config
+├── sphinx-doc
+│   ├── :python
+│   ├── unzip
+│   │   ├── gpatch
+│   │   │   └── xz
+│   │   ├── xz
+│   │   └── bzip2
+│   └── unzip
+│       ├── gpatch
+│       │   └── xz
+│       ├── xz
+│       └── bzip2
+├── unzip
+│   ├── gpatch
+│   │   └── xz
+│   ├── xz
+│   └── bzip2
+├── openssl
+│   ├── :perl
+│   ├── gpatch
+│   │   └── xz
+│   └── zlib
+├── bzip2
+├── libffi
+├── ncurses
+│   ├── pkg-config
+│   ├── gpatch
+│   │   └── xz
+│   └── bzip2
+├── xz
+├── zlib
+├── readline
+│   ├── gpatch
+│   │   └── xz
+│   ├── gpatch
+│   │   └── xz
+│   ├── gpatch
+│   │   └── xz
+│   └── ncurses
+│       ├── pkg-config
+│       ├── gpatch
+│       │   └── xz
+│       └── bzip2
+├── sqlite
+│   ├── unzip
+│   │   ├── gpatch
+│   │   │   └── xz
+│   │   ├── xz
+│   │   └── bzip2
+│   └── readline
+│       ├── gpatch
+│       │   └── xz
+│       ├── gpatch
+│       │   └── xz
+│       ├── gpatch
+│       │   └── xz
+│       └── ncurses
+│           ├── pkg-config
+│           ├── gpatch
+│           │   └── xz
+│           └── bzip2
+├── gdbm
+└── xz
+
+readline (required dependencies)
+├── gpatch
+│   └── xz
+├── gpatch
+│   └── xz
+├── gpatch
+│   └── xz
+└── ncurses
+    ├── pkg-config
+    ├── gpatch
+    │   └── xz
+    └── bzip2
+
+sphinx-doc (required dependencies)
+├── :python
+├── unzip
+│   ├── gpatch
+│   │   └── xz
+│   ├── xz
+│   └── bzip2
+└── unzip
+    ├── gpatch
+    │   └── xz
+    ├── xz
+    └── bzip2
+
+sqlite (required dependencies)
+├── unzip
+│   ├── gpatch
+│   │   └── xz
+│   ├── xz
+│   └── bzip2
+└── readline
+    ├── gpatch
+    │   └── xz
+    ├── gpatch
+    │   └── xz
+    ├── gpatch
+    │   └── xz
+    └── ncurses
+        ├── pkg-config
+        ├── gpatch
+        │   └── xz
+        └── bzip2
+
+unzip (required dependencies)
+├── gpatch
+│   └── xz
+├── xz
+└── bzip2
+
+valgrind (required dependencies)
+└── bzip2
+
+with-readline (required dependencies)
+└── readline
+    ├── gpatch
+    │   └── xz
+    ├── gpatch
+    │   └── xz
+    ├── gpatch
+    │   └── xz
+    └── ncurses
+        ├── pkg-config
+        ├── gpatch
+        │   └── xz
+        └── bzip2
+
+xz (required dependencies)
+
+zlib (required dependencies)
+
