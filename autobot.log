@@ -1,15 +1,14 @@
-==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.64.tar.gz
-A checksum was not provided for this resource
-For your reference the SHA256 is: a84471733f86ac2c1240a6d28b705b05a6b79c3cca8835c3712efbdf813c5eb6
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/autoconf/2.64 --with-lispdir=/home/linuxbrew/.linuxbrew/Cellar/autoconf/2.64/share/emacs/site-lisp/autoconf
+==> Downloading https://ftp.gnu.org/gnu/gcc/gcc-7.2.0/gcc-7.2.0.tar.xz
+==> ../configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gcc/7.2.0  --enable-languages=c,c++,objc,obj-c++,fortran --program-suffix=-7 --with-gmp=/home/linuxbrew/.linuxbrew/opt/gmp --with-mpfr=/home/linuxbrew/.linuxbrew/opt/mpfr --with-mpc=/home/linuxbrew/.linuxbrew/opt/libmpc --with-isl=/home/linuxbrew/.linuxbrew/opt/isl --with-system-zlib --enable-stage1-checking --enable-checking=release --enable-lto --with-build-config=bootstrap-debug --disable-werror --with-pkgversion=Homebrew gcc 7.2.0 --with-bugurl=https://github.com/Homebrew/homebrew/issues --with-boot-ldflags=-static-libstdc++ -static-libgcc  --disable-nls --disable-multilib
+==> make bootstrap
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall autoconf`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.64: 65 files, 3.5MB, built in 15 seconds
-==> Determining autoconf bottle rebuild...
-==> Bottling autoconf-2.64.i686_linux.bottle.tar.gz...
-./autoconf-2.64.i686_linux.bottle.tar.gz
+You can run it manually using `brew postinstall gcc`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gcc/7.2.0: 1,432 files, 882.5MB, built in 102 minutes 13 seconds
+==> Determining gcc bottle rebuild...
+==> Bottling gcc-7.2.0.i686_linux.bottle.tar.gz...
+==> Detecting if gcc-7.2.0.i686_linux.bottle.tar.gz is relocatable...
+./gcc-7.2.0.i686_linux.bottle.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    sha256 "054bd35e4415b689026975778947d37027f4a94373ae6750b6b7bcb3ca77b301" => :i686_linux
+    sha256 "ed6ddfd2f9b03cc7f7b51850ea2a183db17412f9c58e82dcb95e7c124d05ac80" => :i686_linux
   end
