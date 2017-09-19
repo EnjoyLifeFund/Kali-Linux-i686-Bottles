@@ -1,6 +1,14 @@
-==> Determining linuxbrew/xorg/libxfont bottle rebuild...
-==> Bottling libxfont-1.5.2.i686_linux.bottle.tar.gz...
-./libxfont-1.5.2.i686_linux.bottle.tar.gz
+==> Downloading https://ftp.gnu.org/gnu/coreutils/coreutils-8.28.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/coreutils/8.28 --program-prefix=g --without-gmp
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall coreutils`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/coreutils/8.28: 723 files, 29.9MB, built in 4 minutes 4 seconds
+==> Determining coreutils bottle rebuild...
+==> Bottling coreutils-8.28.i686_linux.bottle.1.tar.gz...
+==> Detecting if coreutils-8.28.i686_linux.bottle.1.tar.gz is relocatable...
+./coreutils-8.28.i686_linux.bottle.1.tar.gz
   bottle do
-    sha256 "93ec7e018eda6482434b2ebeeb9c689cf676c0531dbb36fd0f40d71f86f8b5a3" => :i686_linux
+    rebuild 1
+    sha256 "812c3c3a9739a025890c77ef7ae39f0448692b164a9923df41092e51f316d762" => :i686_linux
   end
