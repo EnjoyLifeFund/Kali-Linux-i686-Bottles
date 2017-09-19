@@ -1,8 +1,16 @@
-==> Determining libpng bottle rebuild...
-==> Bottling libpng-1.6.32.i686_linux.bottle.1.tar.gz...
-==> Detecting if libpng-1.6.32.i686_linux.bottle.1.tar.gz is relocatable...
-./libpng-1.6.32.i686_linux.bottle.1.tar.gz
+==> Downloading https://gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.1.tar.bz2
+==> ./configure --disable-silent-rules --enable-static --prefix=/home/linuxbrew/.linuxbrew/Cellar/libgcrypt/1.8.1 --disable-asm --with-libgpg-error-prefix=/home/linuxbrew/.linuxbrew/opt/libgpg-error --disable-jent-support
+==> make
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libgcrypt`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/libgcrypt/1.8.1: 21 files, 10.7MB, built in 7 minutes 22 seconds
+==> Determining libgcrypt bottle rebuild...
+==> Bottling libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz...
+==> Detecting if libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz is relocatable...
+./libgcrypt-1.8.1.i686_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "80e1233a44b40ef2f26de15b5fb20eed8d95c972d57ba2c8eac3c617dcc85f73" => :i686_linux
+    sha256 "d6ec6438030927d53482f0470573b9959519d9c1db76426719c9ff2271979498" => :i686_linux
   end
