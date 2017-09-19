@@ -1,17 +1,8 @@
-==> Downloading https://ftp.gnu.org/gnu/findutils/findutils-4.6.0.tar.gz
-Trying a mirror...
-==> Downloading https://ftpmirror.gnu.org/findutils/findutils-4.6.0.tar.gz
-==> Downloading from http://gnu.mirror.constant.com/findutils/findutils-4.6.0.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/findutils/4.6.0 --localstatedir=/home/linuxbrew/.linuxbrew/var/locate
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall findutils`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/findutils/4.6.0: 65 files, 4MB, built in 2 minutes 30 seconds
-==> Determining findutils bottle rebuild...
-==> Bottling findutils-4.6.0.i686_linux.bottle.3.tar.gz...
-==> Detecting if findutils-4.6.0.i686_linux.bottle.3.tar.gz is relocatable...
-./findutils-4.6.0.i686_linux.bottle.3.tar.gz
+==> Determining freetype bottle rebuild...
+==> Bottling freetype-2.8.1.i686_linux.bottle.1.tar.gz...
+==> Detecting if freetype-2.8.1.i686_linux.bottle.1.tar.gz is relocatable...
+./freetype-2.8.1.i686_linux.bottle.1.tar.gz
   bottle do
-    rebuild 3
-    sha256 "c44b8f849e1bf647c859035c46baf6dc94d3625aa4244f4acefc320a72538c43" => :i686_linux
+    rebuild 1
+    sha256 "72bf17bfd1c8e10b30f0b8ebaccbfada49170a35d5b1c6dfe236b0a3dce28b72" => :i686_linux
   end
