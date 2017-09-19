@@ -1,7 +1,0 @@
-==> Determining gdbm bottle rebuild...
-==> Bottling gdbm-1.13_1.i686_linux.bottle.1.tar.gz...
-./gdbm-1.13_1.i686_linux.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "bf2f4ba044046df95814e99ceb3cc72df648a71abe6450ebbabcfbebc4013b4c" => :i686_linux
-  end
