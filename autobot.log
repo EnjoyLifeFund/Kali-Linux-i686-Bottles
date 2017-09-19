@@ -1,8 +1,15 @@
-==> Determining gmp bottle rebuild...
-==> Bottling gmp-6.1.2.i686_linux.bottle.tar.gz...
-==> Detecting if gmp-6.1.2.i686_linux.bottle.tar.gz is relocatable...
-./gmp-6.1.2.i686_linux.bottle.tar.gz
+==> Downloading https://download.gnome.org/sources/gnome-common/3.18/gnome-common-3.18.0.tar.xz
+==> Downloading from http://mirror.umd.edu/gnome/sources/gnome-common/3.18/gnome-common-3.18.0.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gnome-common/3.18.0
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall gnome-common`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gnome-common/3.18.0: 11 files, 556.7KB, built in 4 seconds
+==> Determining gnome-common bottle rebuild...
+==> Bottling gnome-common-3.18.0.i686_linux.bottle.1.tar.gz...
+./gnome-common-3.18.0.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "cf34d67d35fc9a656dd1eb112fd70d48da6390b090c07a0bdc38ae09df5579f7" => :i686_linux
+    rebuild 1
+    sha256 "34a88277a3df53f6c8c4d84980455cfd215c894fad5333a0e4045dfac06a9289" => :i686_linux
   end
