@@ -1,16 +1,13 @@
-==> Downloading https://ftp.gnu.org/gnu/parallel/parallel-20170822.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/parallel-20170822.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/parallel/20170822
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall parallel`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/parallel/20170822: 61 files, 3MB, built in 5 seconds
-==> Determining parallel bottle rebuild...
-==> Bottling parallel-20170822.i686_linux.bottle.1.tar.gz...
-==> Detecting if parallel-20170822.i686_linux.bottle.1.tar.gz is relocatable...
-./parallel-20170822.i686_linux.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
+
+==> Determining perl bottle rebuild...
+==> Bottling perl-5.26.0_1.i686_linux.bottle.1.tar.gz...
+==> Detecting if perl-5.26.0_1.i686_linux.bottle.1.tar.gz is relocatable...
+./perl-5.26.0_1.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "d638ca2e9c0ff5b649fb5333a11d8295e30a389e40d7e6fa2767fbc26daea257" => :i686_linux
+    sha256 "9dc7f38f482146d607e36c28a4826646680e96e2f2df9b405df8e2398419a1be" => :i686_linux
   end
