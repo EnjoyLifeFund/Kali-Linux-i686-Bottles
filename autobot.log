@@ -1,16 +1,25 @@
-==> Downloading https://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+==> Downloading https://xorg.freedesktop.org/releases/individual/util/makedepend-1.0.5.tar.bz2
 Trying a mirror...
-==> Downloading https://ftpmirror.gnu.org/make/make-4.2.1.tar.bz2
-==> Downloading from http://open-source-box.org/make/make-4.2.1.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/make/4.2.1_1
+==> Downloading http://xorg.mirrors.pair.com/individual/util/makedepend-1.0.5.tar.bz2
+==> Downloading https://xorg.freedesktop.org/releases/individual/proto/xproto-7.0.28.tar.gz
+Trying a mirror...
+==> Downloading http://xorg.mirrors.pair.com/individual/proto/xproto-7.0.28.tar.gz
+==> ./configure --disable-silent-rules --prefix=/tmp/makedepend-20170919-26970-ppv25r/makedepend-1.0.5/xproto
+==> make install
+==> Downloading https://xorg.freedesktop.org/releases/individual/util/util-macros-1.19.0.tar.bz2
+Trying a mirror...
+==> Downloading http://xorg.mirrors.pair.com/individual/util/util-macros-1.19.0.tar.bz2
+==> ./configure --prefix=/tmp/makedepend-20170919-26970-ppv25r/makedepend-1.0.5/xorg-macros
+==> make install
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/makedepend/1.0.5
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall make`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/make/4.2.1_1: 38 files, 2.5MB, built in 34 seconds
-==> Determining make bottle rebuild...
-==> Bottling make-4.2.1_1.i686_linux.bottle.1.tar.gz...
-./make-4.2.1_1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall makedepend`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/makedepend/1.0.5: 8 files, 157.6KB, built in 36 seconds
+==> Determining makedepend bottle rebuild...
+==> Bottling makedepend-1.0.5.i686_linux.bottle.tar.gz...
+./makedepend-1.0.5.i686_linux.bottle.tar.gz
   bottle do
-    rebuild 1
-    sha256 "491073b0b9c136ff75e1751890a61e978af24a31ea3842c686a083a649de103d" => :i686_linux
+    cellar :any_skip_relocation
+    sha256 "b1a5c0a2155c441262a085f851bf39d65edf2986b11aee1de7199f0bd513cfa1" => :i686_linux
   end
