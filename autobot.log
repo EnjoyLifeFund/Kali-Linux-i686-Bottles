@@ -1,17 +1,8 @@
-==> Downloading https://ssl.icu-project.org/files/icu4c/59.1/icu4c-59_1-src.tgz
-Already downloaded: /home/kali/.cache/Homebrew/icu4c-59.1.tgz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/icu4c/59.1 --disable-samples --disable-tests --enable-static
-==> make
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall icu4c`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/icu4c/59.1: 246 files, 68.3MB, built in 6 minutes 4 seconds
-==> Determining icu4c bottle rebuild...
-==> Bottling icu4c-59.1.i686_linux.bottle.1.tar.gz...
-==> Detecting if icu4c-59.1.i686_linux.bottle.1.tar.gz is relocatable...
-./icu4c-59.1.i686_linux.bottle.1.tar.gz
+==> Determining libpng bottle rebuild...
+==> Bottling libpng-1.6.32.i686_linux.bottle.1.tar.gz...
+==> Detecting if libpng-1.6.32.i686_linux.bottle.1.tar.gz is relocatable...
+./libpng-1.6.32.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "2e2659f6862f6e4261f73fb464fc7dd1a7efd387d9c00da70b7d053011b1a339" => :i686_linux
+    sha256 "80e1233a44b40ef2f26de15b5fb20eed8d95c972d57ba2c8eac3c617dcc85f73" => :i686_linux
   end
