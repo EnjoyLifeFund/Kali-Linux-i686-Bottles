@@ -1,19 +1,16 @@
-==> Downloading https://ftp.gnu.org/gnu/indent/indent-2.2.10.tar.gz
+==> Downloading https://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz
 Trying a mirror...
-==> Downloading https://ftpmirror.gnu.org/indent/indent-2.2.10.tar.gz
-==> Downloading from http://mirror.us-midwest-1.nexcess.net/gnu/indent/indent-2.2.10.tar.gz
-==> Patching
-patching file man/Makefile.in
-patching file man/texinfo2man.c
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gnu-indent/2.2.10 --mandir=/home/linuxbrew/.linuxbrew/Cellar/gnu-indent/2.2.10/share/man
+==> Downloading https://ftpmirror.gnu.org/sed/sed-4.4.tar.xz
+==> Downloading from http://mirrors.peers.community/mirrors/gnu/sed/sed-4.4.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gnu-sed/4.4_1 --without-selinux
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gnu-indent`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/gnu-indent/2.2.10: 32 files, 844.3KB, built in 33 seconds
-==> Determining gnu-indent bottle rebuild...
-==> Bottling gnu-indent-2.2.10.i686_linux.bottle.1.tar.gz...
-./gnu-indent-2.2.10.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall gnu-sed`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gnu-sed/4.4_1: 50 files, 1.4MB, built in 1 minute 14 seconds
+==> Determining gnu-sed bottle rebuild...
+==> Bottling gnu-sed-4.4_1.i686_linux.bottle.1.tar.gz...
+./gnu-sed-4.4_1.i686_linux.bottle.1.tar.gz
   bottle do
     rebuild 1
-    sha256 "c6121b09fce35ac7110ba3080626c0fc5c4b38c265fe7e56f0f64742dbc813a1" => :i686_linux
+    sha256 "5db6bbe58ddfd968eaf504540cf59d5dd7b48740f63d4286f3e7b57486bd135c" => :i686_linux
   end
