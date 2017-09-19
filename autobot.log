@@ -1,16 +1,15 @@
-==> Downloading ftp://sourceware.org/pub/valgrind/valgrind-3.13.0.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/valgrind-3.13.0.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/valgrind/3.13.0
-==> make
+==> Downloading https://www.greenend.org.uk/rjk/sw/with-readline-0.1.1.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/with-readline-0.1.1.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/with-readline/0.1.1_1
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall valgrind`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/valgrind/3.13.0: 311 files, 125.9MB, built in 5 minutes 50 seconds
-==> Determining valgrind bottle rebuild...
-==> Bottling valgrind-3.13.0.i686_linux.bottle.1.tar.gz...
-==> Detecting if valgrind-3.13.0.i686_linux.bottle.1.tar.gz is relocatable...
-./valgrind-3.13.0.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall with-readline`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/with-readline/0.1.1_1: 6 files, 114.6KB, built in 19 seconds
+==> Determining with-readline bottle rebuild...
+==> Bottling with-readline-0.1.1_1.i686_linux.bottle.1.tar.gz...
+./with-readline-0.1.1_1.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "1fedcdb6468fbe1194d3deb6d4c96db0efd34cb17fd52267c067950a7ea488f7" => :i686_linux
+    sha256 "49528c16faa674e3b42902a2a9ca42b84268ca7c8694d2dc10a3a6127929ff9a" => :i686_linux
   end
