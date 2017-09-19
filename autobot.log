@@ -1,14 +1,8 @@
-==> Downloading http://pyyaml.org/download/libyaml/yaml-0.1.7.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libyaml/0.1.7
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libyaml`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/libyaml/0.1.7: 10 files, 850.5KB, built in 24 seconds
-==> Determining libyaml bottle rebuild...
-==> Bottling libyaml-0.1.7.i686_linux.bottle.1.tar.gz...
-./libyaml-0.1.7.i686_linux.bottle.1.tar.gz
+==> Determining lz4 bottle rebuild...
+==> Bottling lz4-1.8.0.i686_linux.bottle.1.tar.gz...
+./lz4-1.8.0.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "4322c16749e66bfe95871485c0517d5df9c9817cc5bfcd19a65613bf4dbf56ea" => :i686_linux
+    sha256 "1c935b15444b21e894702c828048a900416ecd39145e0542944eb2bfeb466433" => :i686_linux
   end
