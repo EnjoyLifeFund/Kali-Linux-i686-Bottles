@@ -1,15 +1,8 @@
-==> Downloading https://www.greenend.org.uk/rjk/sw/with-readline-0.1.1.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/with-readline-0.1.1.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/with-readline/0.1.1_1
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall with-readline`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/with-readline/0.1.1_1: 6 files, 114.6KB, built in 19 seconds
-==> Determining with-readline bottle rebuild...
-==> Bottling with-readline-0.1.1_1.i686_linux.bottle.1.tar.gz...
-./with-readline-0.1.1_1.i686_linux.bottle.1.tar.gz
+==> Determining zlib bottle rebuild...
+==> Bottling zlib-1.2.11.i686_linux.bottle.1.tar.gz...
+./zlib-1.2.11.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "49528c16faa674e3b42902a2a9ca42b84268ca7c8694d2dc10a3a6127929ff9a" => :i686_linux
+    sha256 "2e939f8dd57a738dccc72f7ca1061f23ab919b7792646e521aa33de4737840c6" => :i686_linux
   end
