@@ -1,21 +1,16 @@
-==> Downloading https://github.com/p11-glue/p11-kit/releases/download/0.23.8/p11-kit-0.23.8.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/12060420/012c8934-81c8-11e7-8a67-9096c6335830?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170919%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170919T203826Z&X-Amz-Expires=300&X-Amz-Signature=7208c077b3f8f1b7cd68fed00a38e948a4107a364535df77412391428a22585f&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dp11-kit-0.23.8.tar.gz&response-content-type=application%2Foctet-stream
-==> Downloading https://github.com/p11-glue/p11-kit/commit/61acf20.patch?full_index=1
-==> Patching
-==> Applying 61acf20.patch
-patching file common/compat.c
-==> ./configure --disable-silent-rules --disable-trust-module --prefix=/home/linuxbrew/.linuxbrew/Cellar/p11-kit/0.23.8 --sysconfdir=/home/linuxbrew/.linuxbrew/etc --with-module-config=/home/linuxbrew/.linuxbrew/etc/pkcs11/modules --without-libtasn1
-==> make
-==> make check
+==> Downloading https://ftp.gnu.org/gnu/parallel/parallel-20170822.tar.bz2
+Already downloaded: /home/kali/.cache/Homebrew/parallel-20170822.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/parallel/20170822
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall p11-kit`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/p11-kit/0.23.8: 63 files, 9MB, built in 2 minutes 13 seconds
-==> Determining p11-kit bottle rebuild...
-==> Bottling p11-kit-0.23.8.i686_linux.bottle.1.tar.gz...
-==> Detecting if p11-kit-0.23.8.i686_linux.bottle.1.tar.gz is relocatable...
-./p11-kit-0.23.8.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall parallel`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/parallel/20170822: 61 files, 3MB, built in 5 seconds
+==> Determining parallel bottle rebuild...
+==> Bottling parallel-20170822.i686_linux.bottle.1.tar.gz...
+==> Detecting if parallel-20170822.i686_linux.bottle.1.tar.gz is relocatable...
+./parallel-20170822.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "d43a7736f9cd7ef087efaa55dd15606aded3bf6badabf3570a2dd4245947a484" => :i686_linux
+    sha256 "d638ca2e9c0ff5b649fb5333a11d8295e30a389e40d7e6fa2767fbc26daea257" => :i686_linux
   end
