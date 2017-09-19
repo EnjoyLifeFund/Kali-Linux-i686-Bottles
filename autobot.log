@@ -1,16 +1,17 @@
-==> Downloading https://savannah.nongnu.org/download/openexr/ilmbase-2.2.0.tar.gz
-==> Downloading from http://nongnu.askapache.com/openexr/ilmbase-2.2.0.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/ilmbase/2.2.0
+==> Downloading https://ssl.icu-project.org/files/icu4c/59.1/icu4c-59_1-src.tgz
+Already downloaded: /home/kali/.cache/Homebrew/icu4c-59.1.tgz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/icu4c/59.1 --disable-samples --disable-tests --enable-static
+==> make
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ilmbase`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/ilmbase/2.2.0: 366 files, 14.4MB, built in 50 seconds
-==> Determining ilmbase bottle rebuild...
-==> Bottling ilmbase-2.2.0.i686_linux.bottle.4.tar.gz...
-==> Detecting if ilmbase-2.2.0.i686_linux.bottle.4.tar.gz is relocatable...
-./ilmbase-2.2.0.i686_linux.bottle.4.tar.gz
+You can run it manually using `brew postinstall icu4c`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/icu4c/59.1: 246 files, 68.3MB, built in 6 minutes 4 seconds
+==> Determining icu4c bottle rebuild...
+==> Bottling icu4c-59.1.i686_linux.bottle.1.tar.gz...
+==> Detecting if icu4c-59.1.i686_linux.bottle.1.tar.gz is relocatable...
+./icu4c-59.1.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 4
-    sha256 "37022bff0f07568e7adea0afc0588154f927e6eb94a4d0aca1ec8ac48ce76ab3" => :i686_linux
+    rebuild 1
+    sha256 "2e2659f6862f6e4261f73fb464fc7dd1a7efd387d9c00da70b7d053011b1a339" => :i686_linux
   end
