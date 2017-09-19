@@ -1,0 +1,8 @@
+==> Determining linuxbrew/xorg/compositeproto bottle rebuild...
+==> Bottling compositeproto-0.4.2.i686_linux.bottle.1.tar.gz...
+./compositeproto-0.4.2.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "5a2bc8f427609a4193be2684ad2a6c412bcf499f2f20b0e767def11c4e051540" => :i686_linux
+  end
