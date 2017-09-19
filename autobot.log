@@ -1,26 +1,23 @@
-==> Installing dependencies for ant: jdk
-==> Installing ant dependency: jdk
-==> Downloading http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz
-==> Downloading from http://download.oracle.com/otn-pub/java/jdk/8u144-b01/090f390dda5b47b9b721c7dfaa008135/jdk-8u144-linux-x64.tar.gz?AuthParam=1505825790_b53323ebdd945c480d57260c672c4379
+==> Downloading https://www.kernel.org/pub/linux/utils/util-linux/v2.29/util-linux-2.29.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/util-linux-2.29.tar.xz
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29_1 --disable-use-tty-group --disable-kill --disable-cal --disable-ul --without-systemd --with-bashcompletiondir=/home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29_1/etc/bash_completion.d --disable-chfn-chsh --disable-login --disable-su --disable-runuser
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall util-linux`
 ==> Caveats
-By installing and using JDK you agree to the
-Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX
-http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+Some commands were moved to the bsdmainutils formula.
+You may wish to install it as well.
+
+Bash completion has been installed to:
+  /home/linuxbrew/.linuxbrew/etc/bash_completion.d
 
 ==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/jdk/1.8.0-144: 1,628 files, 359.6MB, built in 2 minutes 54 seconds
-==> Installing ant
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=ant/binaries/apache-ant-1.10.1-bin.tar.xz
-==> Best Mirror http://mirrors.koehn.com/apache/ant/binaries/apache-ant-1.10.1-bin.tar.xz
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ant`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/ant/1.10.1: 1,628 files, 37MB, built in 11 seconds
-==> Determining ant bottle rebuild...
-==> Bottling ant-1.10.1.i686_linux.bottle.1.tar.gz...
-==> Detecting if ant-1.10.1.i686_linux.bottle.1.tar.gz is relocatable...
-./ant-1.10.1.i686_linux.bottle.1.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/util-linux/2.29_1: 347 files, 23.7MB, built in 2 minutes 16 seconds
+==> Determining util-linux bottle rebuild...
+==> Bottling util-linux-2.29_1.i686_linux.bottle.1.tar.gz...
+==> Detecting if util-linux-2.29_1.i686_linux.bottle.1.tar.gz is relocatable...
+./util-linux-2.29_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "b2f14e93db0b101c1092674b2642b414e65d66aa19d31142b4432ed397bf3b5a" => :i686_linux
+    sha256 "0dbebb2bde20ee33ee12c76e326e797277e3b9f38d854b7e4da1d1ac92f48485" => :i686_linux
   end
