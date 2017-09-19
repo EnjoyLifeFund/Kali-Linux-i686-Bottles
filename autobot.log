@@ -1,15 +1,7 @@
-==> Downloading http://www.ijg.org/files/jpegsrc.v9b.tar.gz
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/jpeg/9b
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jpeg`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/jpeg/9b: 21 files, 2.9MB, built in 28 seconds
-==> Determining jpeg bottle rebuild...
-==> Bottling jpeg-9b.i686_linux.bottle.1.tar.gz...
-==> Detecting if jpeg-9b.i686_linux.bottle.1.tar.gz is relocatable...
-./jpeg-9b.i686_linux.bottle.1.tar.gz
+==> Determining gdbm bottle rebuild...
+==> Bottling gdbm-1.13_1.i686_linux.bottle.1.tar.gz...
+./gdbm-1.13_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "a4599011e2e1c05f80bdda351348e6fb561708b85892c859189f52739f09fb7b" => :i686_linux
+    sha256 "bf2f4ba044046df95814e99ceb3cc72df648a71abe6450ebbabcfbebc4013b4c" => :i686_linux
   end
