@@ -1,4 +1,21 @@
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
-==> Best Mirror http://apache.mirrors.pair.com/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
-🍺  /home/linuxbrew/.linuxbrew/Cellar/maven/3.5.0: 102 files, 9.8MB, built in 27 seconds
-This formula doesn't require compiling.
+==> Downloading https://nodejs.org/dist/v8.5.0/node-v8.5.0.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/node/8.5.0 --without-npm --with-intl=system-icu
+==> make install
+==> Downloading https://registry.npmjs.org/npm/-/npm-5.3.0.tgz
+==> node /tmp/node-20170919-21850-1eo7kwo/node-v8.5.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/linuxbrew/.linuxbrew/Cellar/node/8.5.0/libexec /home/kali/.cache/Homebrew/node--npm-5.3.0.tgz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall node`
+==> Caveats
+Bash completion has been installed to:
+  /home/linuxbrew/.linuxbrew/etc/bash_completion.d
+
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/node/8.5.0: 4,151 files, 51.3MB, built in 17 minutes 56 seconds
+==> Determining node bottle rebuild...
+==> Bottling node-8.5.0.i686_linux.bottle.1.tar.gz...
+==> Detecting if node-8.5.0.i686_linux.bottle.1.tar.gz is relocatable...
+./node-8.5.0.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "bb8d1e79ed24eabca4e6731288b1186b74ce03480c601dd375356c3b5159007c" => :i686_linux
+  end
