@@ -1,8 +1,16 @@
-==> Determining lz4 bottle rebuild...
-==> Bottling lz4-1.8.0.i686_linux.bottle.1.tar.gz...
-./lz4-1.8.0.i686_linux.bottle.1.tar.gz
+==> Downloading https://ftp.gnu.org/gnu/make/make-4.2.1.tar.bz2
+Trying a mirror...
+==> Downloading https://ftpmirror.gnu.org/make/make-4.2.1.tar.bz2
+==> Downloading from http://open-source-box.org/make/make-4.2.1.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/make/4.2.1_1
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall make`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/make/4.2.1_1: 38 files, 2.5MB, built in 34 seconds
+==> Determining make bottle rebuild...
+==> Bottling make-4.2.1_1.i686_linux.bottle.1.tar.gz...
+./make-4.2.1_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "1c935b15444b21e894702c828048a900416ecd39145e0542944eb2bfeb466433" => :i686_linux
+    sha256 "491073b0b9c136ff75e1751890a61e978af24a31ea3842c686a083a649de103d" => :i686_linux
   end
