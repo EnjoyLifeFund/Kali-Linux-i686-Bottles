@@ -1,16 +1,18 @@
-==> Downloading https://ftp.gnu.org/gnu/sed/sed-4.4.tar.xz
+==> Downloading https://ftp.gnu.org/gnu/time/time-1.7.tar.gz
 Trying a mirror...
-==> Downloading https://ftpmirror.gnu.org/sed/sed-4.4.tar.xz
-==> Downloading from http://mirrors.peers.community/mirrors/gnu/sed/sed-4.4.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gnu-sed/4.4_1 --without-selinux
+==> Downloading https://ftpmirror.gnu.org/time/time-1.7.tar.gz
+==> Downloading from http://mirrors.ibiblio.org/gnu/ftp/gnu/time/time-1.7.tar.gz
+==> Patching
+patching file time.c
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/gnu-time/1.7 --mandir=/home/linuxbrew/.linuxbrew/Cellar/gnu-time/1.7/share/man --info=/home/linuxbrew/.linuxbrew/Cellar/gnu-time/1.7/share/info
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gnu-sed`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/gnu-sed/4.4_1: 50 files, 1.4MB, built in 1 minute 14 seconds
-==> Determining gnu-sed bottle rebuild...
-==> Bottling gnu-sed-4.4_1.i686_linux.bottle.1.tar.gz...
-./gnu-sed-4.4_1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall gnu-time`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/gnu-time/1.7: 9 files, 96.7KB, built in 25 seconds
+==> Determining gnu-time bottle rebuild...
+==> Bottling gnu-time-1.7.i686_linux.bottle.tar.gz...
+./gnu-time-1.7.i686_linux.bottle.tar.gz
   bottle do
-    rebuild 1
-    sha256 "5db6bbe58ddfd968eaf504540cf59d5dd7b48740f63d4286f3e7b57486bd135c" => :i686_linux
+    cellar :any_skip_relocation
+    sha256 "1f0110abaf95d0a28dff960b83f887d7cc7d65feafcfadc22e474c2c94fa1d9a" => :i686_linux
   end
