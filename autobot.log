@@ -1,24 +1,22 @@
-==> Downloading https://www.kraxel.org/releases/amtterm/amtterm-1.6.tar.gz
-==> Downloading https://cpan.metacpan.org/authors/id/P/PH/PHRED/SOAP-Lite-1.11.tar.gz
-==> perl Makefile.PL INSTALL_BASE=/home/linuxbrew/.linuxbrew/Cellar/amtterm/1.6/libexec
-==> make
-==> make install
-==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/amtterm/1.6 install
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/amtterm/04.make:
-2017-09-20 14:52:06 -0700
+==> Installing dependencies for analog: fontconfig, gd
+==> Installing analog dependency: fontconfig
+==> Downloading https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.5.tar.bz2
+Already downloaded: /home/kali/.cache/Homebrew/fontconfig-2.12.5.tar.bz2
+==> autoreconf -iv
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/fontconfig/01.autoreconf:
+2017-09-20 14:52:24 -0700
 
-make
-prefix=/home/linuxbrew/.linuxbrew/Cellar/amtterm/1.6
-install
+autoreconf
+-iv
 
-checking for libdir name ... lib64
-checking for gtk+-3.0 (using pkg-config) ... no
-checking for gdk-3.0 (using pkg-config) ... no
-checking for vte-2.91 (using pkg-config) ... no
-
-Make.config written, edit if needed
-
-Make.config:1: *** empty variable name.  Stop.
+autoreconf: Entering directory `.'
+autoreconf: configure.ac: not using Gettext
+autoreconf: running: aclocal -I m4
+autoreconf: configure.ac: tracing
+autoreconf: running: glibtoolize --copy
+Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN3> line 4.
+autoreconf: failed to run glibtoolize: No such file or directory
+autoreconf: glibtoolize is needed because this package uses Libtool
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
