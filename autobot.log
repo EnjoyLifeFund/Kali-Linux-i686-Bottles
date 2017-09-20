@@ -1,5 +1,3 @@
-==> Downloading https://github.com/apicollective/apibuilder-cli/archive/0.1.7.tar.gz
-==> Downloading from https://codeload.github.com/apicollective/apibuilder-cli/tar.gz/0.1.7
-==> ./install.sh /home/linuxbrew/.linuxbrew/Cellar/apibuilder-cli/0.1.7
-🍺  /home/linuxbrew/.linuxbrew/Cellar/apibuilder-cli/0.1.7: 17 files, 300.4KB, built in 5 seconds
+==> Downloading https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.4.jar
+🍺  /home/linuxbrew/.linuxbrew/Cellar/apktool/2.2.4: 4 files, 6.9MB, built in 18 seconds
 This formula doesn't require compiling.
