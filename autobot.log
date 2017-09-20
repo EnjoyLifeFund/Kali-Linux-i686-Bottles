@@ -1,24 +1,15 @@
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=activemq/activemq-cpp/3.9.3/activemq-cpp-library-3.9.3-src.tar.bz2
-==> Best Mirror http://mirror.cc.columbia.edu/pub/software/apache/activemq/activemq-cpp/3.9.3/activemq-cpp-library-3.9.3-src.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/activemq-cpp/3.9.3
-==> make
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/activemq-cpp/02.make:
-../main/.libs/libactivemq-cpp.so: undefined reference to `SSL_set_shutdown'
-../main/.libs/libactivemq-cpp.so: undefined reference to `BIO_int_ctrl'
-../main/.libs/libactivemq-cpp.so: undefined reference to `SSL_accept'
-collect2: error: ld returned 1 exit status
-Makefile:699: recipe for target 'chat' failed
-make[2]: *** [chat] Error 1
-mv -f stress-test/.deps/stress_test-MessagingTask.Tpo stress-test/.deps/stress_test-MessagingTask.Po
-mv -f cmstemplate-stress/.deps/cmstemplate_stress-ConnectionFactoryMgr.Tpo cmstemplate-stress/.deps/cmstemplate_stress-ConnectionFactoryMgr.Po
-mv -f stress-test/.deps/stress_test-ConnectionFactoryMgr.Tpo stress-test/.deps/stress_test-ConnectionFactoryMgr.Po
-make[2]: Leaving directory '/tmp/activemq-cpp-20170920-21845-1q0l6xx/activemq-cpp-library-3.9.3/src/examples'
-Makefile:653: recipe for target 'all-recursive' failed
-make[1]: *** [all-recursive] Error 1
-make[1]: Leaving directory '/tmp/activemq-cpp-20170920-21845-1q0l6xx/activemq-cpp-library-3.9.3'
-Makefile:523: recipe for target 'all' failed
-make: *** [all] Error 2
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://github.com/admesh/admesh/releases/download/v0.98.3/admesh-0.98.3.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/13716161/d4a7f3ca-0d51-11e7-9fd4-a6fe419085ea?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T205342Z&X-Amz-Expires=300&X-Amz-Signature=4040f0325ad623a4496fae3a2ba12baca8e45760abb553787e0ce1dc67d37b02&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dadmesh-0.98.3.tar.gz&response-content-type=application%2Foctet-stream
+==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/admesh/0.98.3
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall admesh`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/admesh/0.98.3: 19 files, 307.4KB, built in 14 seconds
+==> Determining admesh bottle rebuild...
+==> Bottling admesh-0.98.3.i686_linux.bottle.1.tar.gz...
+./admesh-0.98.3.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "932d75a12d71da80db59ea70f56aab7529f605cdab26d4887a1573cd20e2a1fe" => :i686_linux
+  end
