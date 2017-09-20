@@ -1,23 +1,13 @@
-==> Installing dependencies for agedu: halibut
-==> Installing agedu dependency: halibut
-==> Downloading https://www.chiark.greenend.org.uk/~sgtatham/halibut/halibut-1.2/halibut-1.2.tar.gz
-==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man all
-==> make -C doc prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man
-==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man install
-🍺  /home/linuxbrew/.linuxbrew/Cellar/halibut/1.2: 5 files, 1.5MB, built in 14 seconds
-==> Installing agedu
-==> Downloading https://www.chiark.greenend.org.uk/~sgtatham/agedu/agedu-20170831.fc6b2b5.tar.gz
-==> ./mkauto.sh
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/agedu/20170831
-==> make install
+==> Downloading https://ftp.isc.org/isc/aggregate/aggregate-1.6.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/aggregate/1.6
+==> make CFLAGS= LDFLAGS= install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall agedu`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/agedu/20170831: 6 files, 308.3KB, built in 28 seconds
-==> Determining agedu bottle rebuild...
-==> Bottling agedu-20170831.i686_linux.bottle.1.tar.gz...
-./agedu-20170831.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall aggregate`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/aggregate/1.6: 9 files, 51.2KB, built in 1 second
+==> Determining aggregate bottle rebuild...
+==> Bottling aggregate-1.6.i686_linux.bottle.tar.gz...
+./aggregate-1.6.i686_linux.bottle.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "99c131495ff85be77e1fcc8c703b0621a00497ebf8c762759a39bc367ed240c6" => :i686_linux
+    sha256 "cf610dca661aaa0a29991d47ce487f4cc86fb4c25f69d2de10e9931a06682912" => :i686_linux
   end
