@@ -1,24 +1,24 @@
-==> Downloading https://www.irif.univ-paris-diderot.fr/~jch/software/files/ahcpd-0.53.tar.gz
-==> Downloading from https://www.irif.fr/~jch/software/files/ahcpd-0.53.tar.gz
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/a/aiccu/aiccu_20070115.orig.tar.gz
 ==> Patching
 patching file Makefile
-==> make LDLIBS=''
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/ahcpd/01.make:
-gcc-7 -Os -g -Wall     -c -o ahcpd.o ahcpd.c
-gcc-7 -Os -g -Wall     -c -o monotonic.o monotonic.c
-gcc-7 -Os -g -Wall     -c -o transport.o transport.c
-gcc-7 -Os -g -Wall     -c -o prefix.o prefix.c
-gcc-7 -Os -g -Wall     -c -o configure.o configure.c
-gcc-7 -Os -g -Wall     -c -o config.o config.c
-gcc-7 -Os -g -Wall     -c -o lease.o lease.c
-configure.c: In function ‘run_script’:
-configure.c:129:13: warning: specified bound 200 equals the size of the destination [-Wstringop-overflow=]
-             strncat(buf, interfaces[i], 200);
-             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc-7 -Os -g -Wall    -o ahcpd ahcpd.o monotonic.o transport.o prefix.o configure.o config.o lease.o ''
-gcc-7: error: : No such file or directory
-Makefile:16: recipe for target 'ahcpd' failed
-make: *** [ahcpd] Error 1
+patching file common/aiccu.h
+==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/aiccu/20070115
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/aiccu/01.make:
+compilation terminated.
+make[1]: *** [../common/tun.o] Error 1
+<builtin>: recipe for target 'main.o' failed
+make[1]: *** [main.o] Error 1
+<builtin>: recipe for target '../common/aiccu.o' failed
+make[1]: *** [../common/aiccu.o] Error 1
+<builtin>: recipe for target '../common/hash_md5.o' failed
+make[1]: *** [../common/hash_md5.o] Error 1
+<builtin>: recipe for target '../common/hash_sha1.o' failed
+make[1]: *** [../common/hash_sha1.o] Error 1
+<builtin>: recipe for target '../common/tic.o' failed
+make[1]: *** [../common/tic.o] Error 1
+make[1]: Leaving directory '/tmp/aiccu-20170920-7351-rfrhh4/aiccu-20070115/unix-console'
+Makefile:68: recipe for target 'all' failed
+make: *** [all] Error 2
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
