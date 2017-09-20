@@ -1,14 +1,21 @@
-==> Installing dependencies for acmetool: git, go
-==> Installing acmetool dependency: git
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
-2017-09-20 13:37:30 -0700
+==> Downloading https://acpica.org/sites/acpica/files/acpica-unix-20170728.tar.gz
+==> make PREFIX=/home/linuxbrew/.linuxbrew/Cellar/acpica/20170728
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/acpica/01.make:
+obj/acpixtract ../../../source/components/utilities/utmath.c
+obj/acpixtract ../../../source/components/utilities/utnonansi.c
+obj/acpixtract ../../../source/components/utilities/utxferror.c
+- Link obj/acpixtract
+- Copy obj/acpixtract to ../bin/acpixtract
+make[1]: Leaving directory '/tmp/acpica-20170920-15749-nphn4x/acpica-unix-20170728/generate/unix/acpixtract'
 
-./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
---with-curl 
-
+make[1]: Entering directory '/tmp/acpica-20170920-15749-nphn4x/acpica-unix-20170728/generate/unix/iasl'
+-  m4           Preprocess main iASL parser
+/bin/sh: 1: m4: not found
+Makefile:302: recipe for target 'obj/aslcompiler.y' failed
+make[1]: *** [obj/aslcompiler.y] Error 127
+make[1]: Leaving directory '/tmp/acpica-20170920-15749-nphn4x/acpica-unix-20170728/generate/unix/iasl'
+generate/unix/Makefile.common:7: recipe for target 'iasl' failed
+make: *** [iasl] Error 2
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
