@@ -1,13 +1,28 @@
-==> Downloading https://www.cs.indiana.edu/~kinzler/align/align-1.7.5.tgz
-==> make install BINDIR=/home/linuxbrew/.linuxbrew/Cellar/align/1.7.5/bin
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall align`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/align/1.7.5: 7 files, 43.1KB, built in 1 second
-==> Determining align bottle rebuild...
-==> Bottling align-1.7.5.i686_linux.bottle.1.tar.gz...
-./align-1.7.5.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "955565d2eeda78457261626faef3faccd5d7ddd6e5ac8e4c79ea0da12b45bba1" => :i686_linux
-  end
+==> Installing dependencies for allegro: cmake, flac, opus, opusfile, physfs, theora
+==> Installing allegro dependency: cmake
+==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/cmake-3.9.2.tar.gz
+==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.9.2 --no-system-libs --parallel=8 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/cmake/01.bootstrap:
+-- Performing Test run_inlines_hidden_test - Success
+You must: brew install svn
+-- Warning, could not run java -version
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+BZIP2_LIBRARY
+    linked by target "CMakeLib" in directory /tmp/cmake-20170920-6269-dnbuml/cmake-3.9.2/Source
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/cmake-20170920-6269-dnbuml/cmake-3.9.2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/cmake-20170920-6269-dnbuml/cmake-3.9.2/CMakeFiles/CMakeError.log".
+---------------------------------------------
+Error when bootstrapping CMake:
+Problem while running initial CMake
+---------------------------------------------
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
+These open issues may also help:
+Cyclic dependency involving cmake and curl https://github.com/Linuxbrew/homebrew-core/issues/3348
+portmidi: Use cmake for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/857
