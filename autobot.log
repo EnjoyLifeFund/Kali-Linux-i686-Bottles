@@ -1,18 +1,9 @@
-==> Installing dependencies for ansiweather: oniguruma, jq
-==> Installing ansiweather dependency: oniguruma
-==> Downloading https://github.com/kkos/oniguruma/releases/download/v6.6.1/onig-6.6.1.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/38999874/28f53294-8d72-11e7-880c-514326a5214d?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T221027Z&X-Amz-Expires=300&X-Amz-Signature=fce6b63b9252a2406cda74e11f27bf7e6b352f468f3844c5aa622706bfc7f5a8&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Donig-6.6.1.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/oniguruma/6.6.1
-==> make install
-🍺  /home/linuxbrew/.linuxbrew/Cellar/oniguruma/6.6.1: 18 files, 2.7MB, built in 33 seconds
-==> Installing ansiweather dependency: jq
-==> Downloading https://github.com/stedolan/jq/releases/download/jq-1.5/jq-1.5.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/5101141/f8d0df1e-439f-11e5-980c-9c1e050ee63f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T221100Z&X-Amz-Expires=300&X-Amz-Signature=99bfbc1b746e7c5d2d57e83b544469de6056578ba50ebfcca548dfabbc5e6269&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Djq-1.5.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --disable-silent-rules --disable-maintainer-mode --prefix=/home/linuxbrew/.linuxbrew/Cellar/jq/1.5_2
-==> make install
-🍺  /home/linuxbrew/.linuxbrew/Cellar/jq/1.5_2: 20 files, 3.1MB, built in 35 seconds
-==> Installing ansiweather
-==> Downloading https://github.com/fcambus/ansiweather/archive/1.11.tar.gz
-==> Downloading from https://codeload.github.com/fcambus/ansiweather/tar.gz/1.11
-🍺  /home/linuxbrew/.linuxbrew/Cellar/ansiweather/1.11: 7 files, 33.2KB, built in 3 seconds
-This formula doesn't require compiling.
+==> Determining ant bottle rebuild...
+==> Bottling ant-1.10.1.i686_linux.bottle.1.tar.gz...
+==> Detecting if ant-1.10.1.i686_linux.bottle.1.tar.gz is relocatable...
+./ant-1.10.1.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "b2f14e93db0b101c1092674b2642b414e65d66aa19d31142b4432ed397bf3b5a" => :i686_linux
+  end
