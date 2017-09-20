@@ -1,14 +1,25 @@
-==> Downloading https://github.com/theZiz/aha/archive/0.4.10.6.tar.gz
-==> Downloading from https://codeload.github.com/theZiz/aha/tar.gz/0.4.10.6
-==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/aha/0.4.10.6
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall aha`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/aha/0.4.10.6: 6 files, 51.2KB, built in 7 seconds
-==> Determining aha bottle rebuild...
-==> Bottling aha-0.4.10.6.i686_linux.bottle.1.tar.gz...
-./aha-0.4.10.6.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "5f5bd88d3fcf249bee9cc01c7ecd7485a93ff412090b3ad285b44eaf8da2ad5a" => :i686_linux
-  end
+==> Downloading https://www.irif.univ-paris-diderot.fr/~jch/software/files/ahcpd-0.53.tar.gz
+==> Downloading from https://www.irif.fr/~jch/software/files/ahcpd-0.53.tar.gz
+==> Patching
+patching file Makefile
+==> make LDLIBS=''
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/ahcpd/01.make:
+gcc-7 -Os -g -Wall     -c -o ahcpd.o ahcpd.c
+gcc-7 -Os -g -Wall     -c -o monotonic.o monotonic.c
+gcc-7 -Os -g -Wall     -c -o transport.o transport.c
+gcc-7 -Os -g -Wall     -c -o prefix.o prefix.c
+gcc-7 -Os -g -Wall     -c -o configure.o configure.c
+gcc-7 -Os -g -Wall     -c -o config.o config.c
+gcc-7 -Os -g -Wall     -c -o lease.o lease.c
+configure.c: In function ‘run_script’:
+configure.c:129:13: warning: specified bound 200 equals the size of the destination [-Wstringop-overflow=]
+             strncat(buf, interfaces[i], 200);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc-7 -Os -g -Wall    -o ahcpd ahcpd.o monotonic.o transport.o prefix.o configure.o config.o lease.o ''
+gcc-7: error: : No such file or directory
+Makefile:16: recipe for target 'ahcpd' failed
+make: *** [ahcpd] Error 1
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
