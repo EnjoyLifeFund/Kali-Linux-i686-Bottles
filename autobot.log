@@ -1,22 +1,19 @@
-==> Downloading https://github.com/APE-Project/APE_Server/archive/v1.1.2.tar.gz
-==> Downloading from https://codeload.github.com/APE-Project/APE_Server/tar.gz/v1.1.2
-==> ./build.sh
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/ape/01.build.sh:
-libape-spidermonkey.c: In function ‘ape_sm_timer_wrapper’:
-libape-spidermonkey.c:2335:21: warning: variable ‘asc’ set but not used [-Wunused-but-set-variable]
-    ape_sm_compiled *asc;
-                     ^~~
-libape-spidermonkey.c: In function ‘ape_sm_xorize’:
-libape-spidermonkey.c:56:14: warning: variable ‘g_ape’ set but not used [-Wunused-but-set-variable]
-   acetables *g_ape; \
-              ^
-libape-spidermonkey.c:2936:1: note: in expansion of macro ‘APE_JS_NATIVE’
- APE_JS_NATIVE(ape_sm_xorize)
- ^~~~~~~~~~~~~
-/usr/bin/ld: cannot find -ljs_static
-collect2: error: ld returned 1 exit status
-Makefile:27: recipe for target 'modules' failed
-make: *** [modules] Error 1
+==> Downloading http://git.chise.org/elisp/dist/apel/apel-10.8.tar.gz
+==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8 LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel VERSION_SPECIFIC_LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/apel/01.make:
+2017-09-20 16:55:14 -0700
+
+make
+install
+PREFIX=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8
+LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
+VERSION_SPECIFIC_LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
+
+emacs -batch -q -no-site-file -l APEL-MK -f compile-apel \
+	/home/linuxbrew/.linuxbrew/Cellar/apel/10.8 /home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel /home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
+make: emacs: Command not found
+Makefile:31: recipe for target 'elc' failed
+make: *** [elc] Error 127
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
