@@ -1,24 +1,24 @@
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/a/aiccu/aiccu_20070115.orig.tar.gz
-==> Patching
-patching file Makefile
-patching file common/aiccu.h
-==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/aiccu/20070115
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/aiccu/01.make:
-compilation terminated.
-make[1]: *** [../common/tun.o] Error 1
-<builtin>: recipe for target 'main.o' failed
-make[1]: *** [main.o] Error 1
-<builtin>: recipe for target '../common/aiccu.o' failed
-make[1]: *** [../common/aiccu.o] Error 1
-<builtin>: recipe for target '../common/hash_md5.o' failed
-make[1]: *** [../common/hash_md5.o] Error 1
-<builtin>: recipe for target '../common/hash_sha1.o' failed
-make[1]: *** [../common/hash_sha1.o] Error 1
-<builtin>: recipe for target '../common/tic.o' failed
-make[1]: *** [../common/tic.o] Error 1
-make[1]: Leaving directory '/tmp/aiccu-20170920-7351-rfrhh4/aiccu-20070115/unix-console'
-Makefile:68: recipe for target 'all' failed
-make: *** [all] Error 2
+==> Installing dependencies for aide: pcre
+==> Installing aide dependency: pcre
+==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
+Already downloaded: /home/kali/.cache/Homebrew/pcre-8.41.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/pcre/01.configure:
+checking for gzopen in -lz... yes
+checking bzlib.h usability... no
+checking bzlib.h presence... no
+checking for bzlib.h... no
+checking for libbz2... no
+checking for the pthreads library -lpthreads... no
+checking whether pthreads work without any flags... no
+checking whether pthreads work with -Kthread... no
+checking whether pthreads work with -kthread... no
+checking for the pthreads library -llthread... no
+checking whether pthreads work with -pthread... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... yes
+** Cannot --enable-pcregrep-libbz2 because bzlib.h was not found
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
