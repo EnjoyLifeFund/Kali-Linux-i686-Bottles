@@ -1,23 +1,4 @@
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=ant/binaries/apache-ant-1.9.9-bin.tar.bz2
-==> Best Mirror http://mirror.cogentco.com/pub/apache/ant/binaries/apache-ant-1.9.9-bin.tar.bz2
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall ant@1.9`
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /home/linuxbrew/.linuxbrew,
-because this is an alternate version of another formula.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/ant@1.9/bin:$PATH"' >> ~/.bash_profile
-
-
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/ant@1.9/1.9.9: 1,617 files, 35.4MB, built in 14 seconds
-==> Determining ant@1.9 bottle rebuild...
-==> Bottling ant@1.9-1.9.9.i686_linux.bottle.1.tar.gz...
-==> Detecting if ant@1.9-1.9.9.i686_linux.bottle.1.tar.gz is relocatable...
-./ant@1.9-1.9.9.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "bf93500a4f3a8605f0942ce709db9a139f6663afa8333fceb8135819c9560d74" => :i686_linux
-  end
+==> Downloading https://downloads.sourceforge.net/project/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3-bin.tar.gz
+==> Downloading from https://cytranet.dl.sourceforge.net/project/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3-bin.tar.gz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/ant-contrib/1.0b3: 257 files, 3.5MB, built in 9 seconds
+This formula doesn't require compiling.
