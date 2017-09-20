@@ -1,15 +1,3 @@
-==> Installing dependencies for akamai: git, go, glide
-==> Installing akamai dependency: git
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
-2017-09-20 14:27:14 -0700
-
-./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
---with-curl 
-
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://downloads.typesafe.com/akka/akka_2.11-2.4.17.zip
+🍺  /home/linuxbrew/.linuxbrew/Cellar/akka/2.4.17: 3,238 files, 251.4MB, built in 2 minutes 25 seconds
+This formula doesn't require compiling.
