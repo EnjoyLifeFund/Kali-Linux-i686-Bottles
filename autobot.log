@@ -1,3 +1,13 @@
-==> Downloading https://downloads.typesafe.com/akka/akka_2.11-2.4.17.zip
-🍺  /home/linuxbrew/.linuxbrew/Cellar/akka/2.4.17: 3,238 files, 251.4MB, built in 2 minutes 25 seconds
-This formula doesn't require compiling.
+==> Downloading https://web.archive.org/web/20150510210401/craz.net/programs/itunes/files/alac_decoder-0.2.0.tgz
+==> make CFLAGS= CC=gcc-7
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall alac`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/alac/0.2.0: 4 files, 44KB, built in 2 seconds
+==> Determining alac bottle rebuild...
+==> Bottling alac-0.2.0.i686_linux.bottle.1.tar.gz...
+./alac-0.2.0.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "b39739354217f173836cc71eebf8efc85b32c360c06aa7b1667d00f24ebea60a" => :i686_linux
+  end
