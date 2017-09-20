@@ -1,20 +1,3 @@
-==> Downloading http://git.chise.org/elisp/dist/apel/apel-10.8.tar.gz
-==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8 LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel VERSION_SPECIFIC_LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/apel/01.make:
-2017-09-20 16:55:14 -0700
-
-make
-install
-PREFIX=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8
-LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
-VERSION_SPECIFIC_LISPDIR=/home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
-
-emacs -batch -q -no-site-file -l APEL-MK -f compile-apel \
-	/home/linuxbrew/.linuxbrew/Cellar/apel/10.8 /home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel /home/linuxbrew/.linuxbrew/Cellar/apel/10.8/share/emacs/site-lisp/apel
-make: emacs: Command not found
-Makefile:31: recipe for target 'elc' failed
-make: *** [elc] Error 127
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://www.apgdiff.com/download/apgdiff-2.4-bin.zip
+🍺  /home/linuxbrew/.linuxbrew/Cellar/apgdiff/2.4: 6 files, 121KB, built in 4 seconds
+This formula doesn't require compiling.
