@@ -1,25 +1,15 @@
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-==> Updated Formulae
-clhep
-entr
-firebase-cli
-freetds
-gofabric8
-kompose
-pick
+==> Installing dependencies for algernon: git, go, glide
+==> Installing algernon dependency: git
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
+2017-09-20 14:32:27 -0700
 
-==> Downloading https://github.com/wooorm/alex/archive/5.0.0.tar.gz
-==> Downloading from https://codeload.github.com/wooorm/alex/tar.gz/5.0.0
-==> npm install -ddd --global --build-from-source --cache=/home/kali/.cache/Homebrew/npm_cache --prefix=/home/linuxbrew/.linuxbrew/Cellar/alexjs/5.0.0/libexec /tmp/alexjs-20170920-30910-1h4pxnt/alex-5.0.0/alex-5.0.0.tgz
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall alexjs`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/alexjs/5.0.0: 1,553 files, 5.2MB, built in 39 seconds
-==> Determining alexjs bottle rebuild...
-==> Bottling alexjs-5.0.0.i686_linux.bottle.1.tar.gz...
-./alexjs-5.0.0.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "69ca1b711824eae67bed51406b5bc79d2dd3e9bf4aefcf8a3c0cde51cbcf7279" => :i686_linux
-  end
+./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
+--with-curl 
+
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
