@@ -1,28 +1,26 @@
-==> Installing dependencies for alure: cmake
-==> Installing alure dependency: cmake
-==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/cmake-3.9.2.tar.gz
-==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.9.2 --no-system-libs --parallel=8 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/cmake/01.bootstrap:
--- Performing Test run_inlines_hidden_test - Success
-You must: brew install svn
--- Warning, could not run java -version
-CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
-Please set them or make sure they are set and tested correctly in the CMake files:
-BZIP2_LIBRARY
-    linked by target "CMakeLib" in directory /tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/Source
+==> Installing dependencies for amap: perl
+==> Installing amap dependency: perl
+==> Downloading https://www.cpan.org/src/5.0/perl-5.26.0.tar.xz
+==> ./Configure -des -Dprefix=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1 -Dprivlib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/5.26.0 -Dsitelib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/site_perl/5.26.0 -Dotherlibdirs=/home/linuxbrew/.linuxbrew/lib/perl5/site_perl/5.26.0 -Dperlpath=/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man1 -Dman3dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/linuxbrew/.linuxbrew/include
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/perl/01.Configure:
 
--- Configuring incomplete, errors occurred!
-See also "/tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/CMakeFiles/CMakeOutput.log".
-See also "/tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/CMakeFiles/CMakeError.log".
----------------------------------------------
-Error when bootstrapping CMake:
-Problem while running initial CMake
----------------------------------------------
+#include <stdio.h>
+int main() { printf("Ok\n"); return(0); }
+
+I used the command:
+
+	cc -o try -O2 -D_REENTRANT -D_GNU_SOURCE -I/home/linuxbrew/.linuxbrew/include -L/usr/local/lib try.c -lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+	 ./try
+
+and I got the following output:
+
+/bin/sh: 1: ./try: Accessing a corrupted shared library
+The program compiled OK, but exited with status 2.
+You have a problem.  Shall I abort Configure [y]  
+Ok.  Stopping Configure.
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
 
 These open issues may also help:
-Cyclic dependency involving cmake and curl https://github.com/Linuxbrew/homebrew-core/issues/3348
-portmidi: Use cmake for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/857
+perl-modules: new formula for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/312
