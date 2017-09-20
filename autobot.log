@@ -1,22 +1,2 @@
-==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/aoeui/aoeui-1.6.tgz
-==> make INST_DIR=/home/linuxbrew/.linuxbrew/Cellar/aoeui/1.6 install
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/aoeui/01.make:
-m4 help.m4 | sed 's/\\/\\\\/g;s/"/\\"/g;s/^/"/;s/$/\\n"/' >aoeui.help
-/bin/sh: 1: m4: not found
-m4 -D ASDFG help.m4 | sed 's/\\/\\\\/g;s/"/\\"/g;s/^/"/;s/$/\\n"/' >asdfg.help
-/bin/sh: 1: m4: not found
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o find.o find.c
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o tags.o tags.c
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o tab.o tab.c
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o fold.o fold.c
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o macro.o macro.c
-gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o keyword.o keyword.c
-m4 aoeui.1.m4 >aoeui.1
-/bin/sh: 1: m4: not found
-Makefile:47: recipe for target 'aoeui.1' failed
-make: *** [aoeui.1] Error 127
-make: *** Waiting for unfinished jobs....
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=archiva/2.2.3/binaries/apache-archiva-2.2.3-bin.tar.gz
+==> Best Mirror http://mirror.cc.columbia.edu/pub/software/apache/archiva/2.2.3/binaries/apache-archiva-2.2.3-bin.tar.gz
