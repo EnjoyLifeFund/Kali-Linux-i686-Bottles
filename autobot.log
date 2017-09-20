@@ -1,12 +1,12 @@
-==> Downloading https://d3kbcqa49mib13.cloudfront.net/spark-1.5.2-bin-hadoop2.6.tgz
+==> Downloading https://d3kbcqa49mib13.cloudfront.net/spark-1.6.3-bin-hadoop2.6.tgz
 ==> Caveats
 This formula is keg-only, which means it was not symlinked into /home/linuxbrew/.linuxbrew,
 because this is an alternate version of another formula.
 
 If you need to have this software first in your PATH run:
-  echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/apache-spark@1.5/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH="/home/linuxbrew/.linuxbrew/opt/apache-spark@1.6/bin:$PATH"' >> ~/.bash_profile
 
 
 ==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/apache-spark@1.5/1.5.2_1: 655 files, 302.8MB, built in 5 minutes 47 seconds
+🍺  /home/linuxbrew/.linuxbrew/Cellar/apache-spark@1.6/1.6.3_1: 843 files, 301.9MB, built in 9 minutes 7 seconds
 This formula doesn't require compiling.
