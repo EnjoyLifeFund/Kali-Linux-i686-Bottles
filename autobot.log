@@ -1,26 +1,28 @@
-==> Downloading http://alpine.freeiz.com/alpine/release/src/alpine-2.21.tar.xz
-==> ./configure --with-ssl-dir=/home/linuxbrew/.linuxbrew/opt/openssl --with-ssl-certs-dir=/home/linuxbrew/.linuxbrew/etc/openssl --prefix=/home/linuxbrew/.linuxbrew/Cellar/alpine/2.21 --with-passfile=.pine-passfile
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/alpine/01.configure:
-checking for passwd... /usr/bin/passwd
-checking for hunspell... no
-checking for aspell... aspell
-checking for aspell... /usr/bin/aspell
-checking for hunspell... no
-checking for aspell... aspell
-checking for aspell... /usr/bin/aspell
-configure: --with-passfile definition overrides OS-Specific password caching
-checking for setupterm in -ltinfo... yes
-checking for library containing dlopen... -ldl
-checking if OpenSSL is LibreSSL... no
-checking Openssl library version >= 1.0.0c... yes
-checking Openssl library version >= 1.1.0... no
-checking for library containing SSLeay... no
-configure: error: crypto library NOT found
+==> Installing dependencies for alure: cmake
+==> Installing alure dependency: cmake
+==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/cmake-3.9.2.tar.gz
+==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.9.2 --no-system-libs --parallel=8 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/cmake/01.bootstrap:
+-- Performing Test run_inlines_hidden_test - Success
+You must: brew install svn
+-- Warning, could not run java -version
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+BZIP2_LIBRARY
+    linked by target "CMakeLib" in directory /tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/Source
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/cmake-20170920-21234-1cdiozn/cmake-3.9.2/CMakeFiles/CMakeError.log".
+---------------------------------------------
+Error when bootstrapping CMake:
+Problem while running initial CMake
+---------------------------------------------
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
 
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-No changes to formulae.
-
+These open issues may also help:
+Cyclic dependency involving cmake and curl https://github.com/Linuxbrew/homebrew-core/issues/3348
+portmidi: Use cmake for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/857
