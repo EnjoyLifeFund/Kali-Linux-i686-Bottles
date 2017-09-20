@@ -1,13 +1,18 @@
-==> Downloading https://web.archive.org/web/20150510210401/craz.net/programs/itunes/files/alac_decoder-0.2.0.tgz
-==> make CFLAGS= CC=gcc-7
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall alac`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/alac/0.2.0: 4 files, 44KB, built in 2 seconds
-==> Determining alac bottle rebuild...
-==> Bottling alac-0.2.0.i686_linux.bottle.1.tar.gz...
-./alac-0.2.0.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "b39739354217f173836cc71eebf8efc85b32c360c06aa7b1667d00f24ebea60a" => :i686_linux
-  end
+==> Installing dependencies for aldo: libao
+==> Installing aldo dependency: libao
+==> Downloading https://github.com/xiph/libao/archive/1.2.2.tar.gz
+==> Downloading from https://codeload.github.com/xiph/libao/tar.gz/1.2.2
+==> ./autogen.sh
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/libao/01.autogen.sh:
+2017-09-20 14:30:30 -0700
+
+./autogen.sh
+
+Updating build configuration files for libao, please wait....
+Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN2> line 3.
+autoreconf: failed to run glibtoolize: No such file or directory
+autoreconf: glibtoolize is needed because this package uses Libtool
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
