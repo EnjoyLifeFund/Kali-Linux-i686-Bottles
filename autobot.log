@@ -1,21 +1,23 @@
-==> Installing dependencies for agda: emacs, git, ghc, cabal-install
-==> Installing agda dependency: emacs
-==> Downloading https://ftp.gnu.org/gnu/emacs/emacs-25.3.tar.xz
-==> ./configure --disable-silent-rules --enable-locallisppath=/home/linuxbrew/.linuxbrew/share/emacs/site-lisp --infodir=/home/linuxbrew/.linuxbrew/Cellar/emacs/25.3/share/info/emacs --prefix=/home/linuxbrew/.linuxbrew/Cellar/emacs/25.3 --without-x --with-xml2 --without-dbus --without-gnutls --without-imagemagick --without-ns
-==> make
+==> Installing dependencies for agedu: halibut
+==> Installing agedu dependency: halibut
+==> Downloading https://www.chiark.greenend.org.uk/~sgtatham/halibut/halibut-1.2/halibut-1.2.tar.gz
+==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man all
+==> make -C doc prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man
+==> make prefix=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2 mandir=/home/linuxbrew/.linuxbrew/Cellar/halibut/1.2/share/man install
+🍺  /home/linuxbrew/.linuxbrew/Cellar/halibut/1.2: 5 files, 1.5MB, built in 14 seconds
+==> Installing agedu
+==> Downloading https://www.chiark.greenend.org.uk/~sgtatham/agedu/agedu-20170831.fc6b2b5.tar.gz
+==> ./mkauto.sh
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/agedu/20170831
 ==> make install
-🍺  /home/linuxbrew/.linuxbrew/Cellar/emacs/25.3: 4,043 files, 104.2MB, built in 6 minutes 47 seconds
-==> Installing agda dependency: git
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
-Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
-2017-09-20 14:17:13 -0700
-
-./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
---with-curl 
-
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall agedu`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/agedu/20170831: 6 files, 308.3KB, built in 28 seconds
+==> Determining agedu bottle rebuild...
+==> Bottling agedu-20170831.i686_linux.bottle.1.tar.gz...
+./agedu-20170831.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "99c131495ff85be77e1fcc8c703b0621a00497ebf8c762759a39bc367ed240c6" => :i686_linux
+  end
