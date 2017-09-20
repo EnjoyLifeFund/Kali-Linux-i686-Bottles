@@ -1,4 +1,27 @@
-==> Downloading https://github.com/lihaoyi/Ammonite/releases/download/1.0.2/2.12-1.0.2
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/29178282/de281ec0-8772-11e7-827d-340cada3488b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T214934Z&X-Amz-Expires=300&X-Amz-Signature=98c75ed3bbb109a26d66274fb00d0e3205f06b123f0840e3b952b177c5a2f79e&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3D2.12-1.0.2&response-content-type=application%2Foctet-stream
-🍺  /home/linuxbrew/.linuxbrew/Cellar/ammonite-repl/1.0.2: 3 files, 37.2MB, built in 54 seconds
-This formula doesn't require compiling.
+==> Installing dependencies for ampl-mp: perl, cmake
+==> Installing ampl-mp dependency: perl
+==> Downloading https://www.cpan.org/src/5.0/perl-5.26.0.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/perl-5.26.0.tar.xz
+==> ./Configure -des -Dprefix=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1 -Dprivlib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/5.26.0 -Dsitelib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/site_perl/5.26.0 -Dotherlibdirs=/home/linuxbrew/.linuxbrew/lib/perl5/site_perl/5.26.0 -Dperlpath=/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man1 -Dman3dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/linuxbrew/.linuxbrew/include
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/perl/01.Configure:
+
+#include <stdio.h>
+int main() { printf("Ok\n"); return(0); }
+
+I used the command:
+
+	cc -o try -O2 -D_REENTRANT -D_GNU_SOURCE -I/home/linuxbrew/.linuxbrew/include -L/usr/local/lib try.c -lpthread -lnsl -ldl -lm -lcrypt -lutil -lc
+	 ./try
+
+and I got the following output:
+
+/bin/sh: 1: ./try: Accessing a corrupted shared library
+The program compiled OK, but exited with status 2.
+You have a problem.  Shall I abort Configure [y]  
+Ok.  Stopping Configure.
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
+These open issues may also help:
+perl-modules: new formula for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/312
