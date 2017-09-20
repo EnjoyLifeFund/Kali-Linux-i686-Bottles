@@ -1,20 +1,22 @@
-==> Downloading https://www.chiark.greenend.org.uk/~ian/adns/ftp/adns-1.5.1.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/adns/1.5.1 --disable-dynamic
-==> make
+==> Installing dependencies for adplug: libbinio
+==> Installing adplug dependency: libbinio
+==> Downloading https://downloads.sourceforge.net/project/libbinio/libbinio/1.4/libbinio-1.4.tar.bz2
+==> Downloading from https://versaweb.dl.sourceforge.net/project/libbinio/libbinio/1.4/libbinio-1.4.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/libbinio/1.4
+==> make install
+🍺  /home/linuxbrew/.linuxbrew/Cellar/libbinio/1.4: 21 files, 707.9KB, built in 26 seconds
+==> Installing adplug
+==> Downloading https://github.com/adplug/adplug/releases/download/adplug-2.2.1/adplug-2.2.1.tar.bz2
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/37790262/42ca1fe0-1858-11e5-8c98-8adffc63a2c4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T205548Z&X-Amz-Expires=300&X-Amz-Signature=087c1a93db3b651e6cac2847df137e244ce8bb125c99c3379758ea9465149c1c&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dadplug-2.2.1.tar.bz2&response-content-type=application%2Foctet-stream
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/adplug/2.2.1
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall adns`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/adns/1.5.1: 14 files, 2.1MB, built in 27 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-==> Updated Formulae
-glibmm
-
-==> Determining adns bottle rebuild...
-==> Bottling adns-1.5.1.i686_linux.bottle.1.tar.gz...
-./adns-1.5.1.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall adplug`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/adplug/2.2.1: 74 files, 9.4MB, built in 1 minute 14 seconds
+==> Determining adplug bottle rebuild...
+==> Bottling adplug-2.2.1.i686_linux.bottle.tar.gz...
+==> Detecting if adplug-2.2.1.i686_linux.bottle.tar.gz is relocatable...
+./adplug-2.2.1.i686_linux.bottle.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "3c58f360a81a8b9957d31b7a66e2be447f4ea3fe6b0695de9574c64dc4401268" => :i686_linux
+    sha256 "a2718a91493de7ebdff1281ca0913a57d542a0d19ebde1a933acef0d00e451e3" => :i686_linux
   end
