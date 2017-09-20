@@ -1,14 +1,14 @@
-==> Downloading http://www.quut.com/abnfgen/abnfgen-0.17.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/abnfgen/0.17 --mandir=/home/linuxbrew/.linuxbrew/Cellar/abnfgen/0.17/share/man
+==> Downloading https://downloads.sourceforge.net/project/abook/abook/0.5.6/abook-0.5.6.tar.gz
+==> Downloading from http://cfhcable.dl.sourceforge.net/project/abook/abook/0.5.6/abook-0.5.6.tar.gz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/abook/0.5.6_1 --mandir=/home/linuxbrew/.linuxbrew/Cellar/abook/0.5.6_1/share/man
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall abnfgen`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/abnfgen/0.17: 9 files, 162.5KB, built in 4 seconds
-==> Determining abnfgen bottle rebuild...
-==> Bottling abnfgen-0.17.i686_linux.bottle.1.tar.gz...
-./abnfgen-0.17.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall abook`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/abook/0.5.6_1: 15 files, 386.3KB, built in 23 seconds
+==> Determining abook bottle rebuild...
+==> Bottling abook-0.5.6_1.i686_linux.bottle.1.tar.gz...
+./abook-0.5.6_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
     rebuild 1
-    sha256 "d049dcbd3fd35f58582ffda4285502082dab5b61217197e5d7beda0cb0540611" => :i686_linux
+    sha256 "74450dcdaeec4893257bb378a626dabc3236dbea1712ab17223c89dac07217cc" => :i686_linux
   end
