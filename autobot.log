@@ -1,18 +1,25 @@
-==> Installing dependencies for aldo: libao
-==> Installing aldo dependency: libao
-==> Downloading https://github.com/xiph/libao/archive/1.2.2.tar.gz
-==> Downloading from https://codeload.github.com/xiph/libao/tar.gz/1.2.2
-==> ./autogen.sh
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/libao/01.autogen.sh:
-2017-09-20 14:30:30 -0700
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+clhep
+entr
+firebase-cli
+freetds
+gofabric8
+kompose
+pick
 
-./autogen.sh
-
-Updating build configuration files for libao, please wait....
-Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN2> line 3.
-autoreconf: failed to run glibtoolize: No such file or directory
-autoreconf: glibtoolize is needed because this package uses Libtool
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://github.com/wooorm/alex/archive/5.0.0.tar.gz
+==> Downloading from https://codeload.github.com/wooorm/alex/tar.gz/5.0.0
+==> npm install -ddd --global --build-from-source --cache=/home/kali/.cache/Homebrew/npm_cache --prefix=/home/linuxbrew/.linuxbrew/Cellar/alexjs/5.0.0/libexec /tmp/alexjs-20170920-30910-1h4pxnt/alex-5.0.0/alex-5.0.0.tgz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall alexjs`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/alexjs/5.0.0: 1,553 files, 5.2MB, built in 39 seconds
+==> Determining alexjs bottle rebuild...
+==> Bottling alexjs-5.0.0.i686_linux.bottle.1.tar.gz...
+./alexjs-5.0.0.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "69ca1b711824eae67bed51406b5bc79d2dd3e9bf4aefcf8a3c0cde51cbcf7279" => :i686_linux
+  end
