@@ -1,14 +1,13 @@
-==> Downloading http://www.ifdo.ca/~seymour/runabc/abcMIDI-2017.09.12.zip
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12 --mandir=/home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12/share/man
-==> make install
+==> Downloading http://www.brain-dump.org/projects/abduco/abduco-0.6.tar.gz
+==> make PREFIX=/home/linuxbrew/.linuxbrew/Cellar/abduco/0.6 install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall abcmidi`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12: 26 files, 1.3MB, built in 13 seconds
-==> Determining abcmidi bottle rebuild...
-==> Bottling abcmidi-2017-09-12.i686_linux.bottle.1.tar.gz...
-./abcmidi-2017-09-12.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall abduco`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/abduco/0.6: 6 files, 70.6KB, built in 3 seconds
+==> Determining abduco bottle rebuild...
+==> Bottling abduco-0.6.i686_linux.bottle.1.tar.gz...
+./abduco-0.6.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "af4e5d6c8d745bff03647c8f140c19f82412ab516ec2cb25868b82b0b06d5e90" => :i686_linux
+    sha256 "e96863246dce6ee6ef3b4d325f8c4e0eaa43ead6a01b7a49fc7a920b13f0292d" => :i686_linux
   end
