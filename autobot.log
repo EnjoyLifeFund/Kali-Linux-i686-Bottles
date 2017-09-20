@@ -1,28 +1,21 @@
-==> Downloading https://downloads.sourceforge.net/project/anttweakbar/AntTweakBar_116.zip
-==> Downloading from https://cytranet.dl.sourceforge.net/project/anttweakbar/AntTweakBar_116.zip
-==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/62e79481/anttweakbar/anttweakbar.diff
-==> Patching
-==> Applying anttweakbar.diff
-patching file src/LoadOGLCore.h
-patching file src/LoadOGLCore.cpp
-Hunk #1 succeeded at 484 with fuzz 2.
-==> make -C src -f Makefile.osx
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/anttweakbar/01.make:
-Makefile.osx:70: recipe for target 'TwColors.o' failed
-make: *** [TwColors.o] Error 1
-cc1plus: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
-Makefile.osx:70: recipe for target 'TwFonts.o' failed
-make: *** [TwFonts.o] Error 1
-cc1plus: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
-Makefile.osx:70: recipe for target 'TwBar.o' failed
-make: *** [TwBar.o] Error 1
-cc1plus: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
-Makefile.osx:70: recipe for target 'TwOpenGLCore.o' failed
-make: *** [TwOpenGLCore.o] Error 1
-cc1plus: error: argument to ‘-O’ should be a non-negative integer, ‘g’, ‘s’ or ‘fast’
-Makefile.osx:70: recipe for target 'LoadOGL.o' failed
-make: *** [LoadOGL.o] Error 1
-make: Leaving directory '/tmp/anttweakbar-20170920-12322-1vr7swi/AntTweakBar/src'
+==> Downloading https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/aoeui/aoeui-1.6.tgz
+==> make INST_DIR=/home/linuxbrew/.linuxbrew/Cellar/aoeui/1.6 install
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/aoeui/01.make:
+m4 help.m4 | sed 's/\\/\\\\/g;s/"/\\"/g;s/^/"/;s/$/\\n"/' >aoeui.help
+/bin/sh: 1: m4: not found
+m4 -D ASDFG help.m4 | sed 's/\\/\\\\/g;s/"/\\"/g;s/^/"/;s/$/\\n"/' >asdfg.help
+/bin/sh: 1: m4: not found
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o find.o find.c
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o tags.o tags.c
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o tab.o tab.c
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o fold.o fold.c
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o macro.o macro.c
+gcc-7 -Wall -Wno-parentheses -Wpointer-arith -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations   -c -o keyword.o keyword.c
+m4 aoeui.1.m4 >aoeui.1
+/bin/sh: 1: m4: not found
+Makefile:47: recipe for target 'aoeui.1' failed
+make: *** [aoeui.1] Error 127
+make: *** Waiting for unfinished jobs....
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
