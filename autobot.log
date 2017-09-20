@@ -1,3 +1,15 @@
-==> Downloading https://dl.bintray.com/qameta/generic/io/qameta/allure/allure/2.3.5/allure-2.3.5.zip
-🍺  /home/linuxbrew/.linuxbrew/Cellar/allure/2.3.5: 64 files, 8.8MB, built in 12 seconds
-This formula doesn't require compiling.
+==> Installing dependencies for alot: git, pcre, swig, npth, guile, autogen, gnutls, libksba, libassuan, docbook-xsl, glib, fontconfig, pixman, cairo, gobject-introspection, libsecret, pinentry, libcap, systemd, libusb, gnupg, pth, gpgme, gmime, talloc, xapian, notmuch
+==> Installing alot dependency: git
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
+2017-09-20 14:39:32 -0700
+
+./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
+--with-curl 
+
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
