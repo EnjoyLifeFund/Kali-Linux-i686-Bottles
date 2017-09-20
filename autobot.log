@@ -1,24 +1,23 @@
-==> Installing dependencies for aide: pcre
-==> Installing aide dependency: pcre
-==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/pcre-8.41.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/pcre/01.configure:
-checking for gzopen in -lz... yes
-checking bzlib.h usability... no
-checking bzlib.h presence... no
-checking for bzlib.h... no
-checking for libbz2... no
-checking for the pthreads library -lpthreads... no
-checking whether pthreads work without any flags... no
-checking whether pthreads work with -Kthread... no
-checking whether pthreads work with -kthread... no
-checking for the pthreads library -llthread... no
-checking whether pthreads work with -pthread... yes
-checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
-checking if more special flags are required for pthreads... no
-checking for PTHREAD_PRIO_INHERIT... yes
-** Cannot --enable-pcregrep-libbz2 because bzlib.h was not found
+==> Downloading https://download.aircrack-ng.org/aircrack-ng-1.1.tar.gz
+==> Patching
+patching file scripts/airodump-ng-oui-update
+==> make CC=gcc-7
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/aircrack-ng/01.make:
+cc1: all warnings being treated as errors
+<builtin>: recipe for target 'linux.o' failed
+make[3]: *** [linux.o] Error 1
+make[3]: Leaving directory '/tmp/aircrack-ng-20170920-12574-qh6rou/aircrack-ng-1.1/src/osdep'
+Makefile:31: recipe for target 'all' failed
+make[2]: *** [all] Error 2
+make[2]: Leaving directory '/tmp/aircrack-ng-20170920-12574-qh6rou/aircrack-ng-1.1/src/osdep'
+Makefile:122: recipe for target 'osd' failed
+make[1]: *** [osd] Error 2
+cc1: all warnings being treated as errors
+<builtin>: recipe for target 'aircrack-ng.o' failed
+make[1]: *** [aircrack-ng.o] Error 1
+make[1]: *** wait: No child processes.  Stop.
+Makefile:18: recipe for target 'all' failed
+make: *** [all] Error 2
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
