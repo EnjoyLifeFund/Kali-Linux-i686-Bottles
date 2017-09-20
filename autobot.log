@@ -1,21 +1,24 @@
-==> Downloading http://lcamtuf.coredump.cx/afl/releases/afl-2.51b.tgz
-==> make PREFIX=/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/afl-fuzz/01.make:
-gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-showmap.c -o afl-showmap -ldl
-gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-tmin.c -o afl-tmin -ldl
-gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-gotcpu.c -o afl-gotcpu -ldl
-gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-analyze.c -o afl-analyze -ldl
-gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-as.c -o afl-as -ldl
-ln -sf afl-as as
-[*] Testing the CC wrapper and instrumentation output...
-unset AFL_USE_ASAN AFL_USE_MSAN; AFL_QUIET=1 AFL_INST_RATIO=100 AFL_PATH=. ./afl-gcc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" test-instr.c -o test-instr -ldl
-echo 0 | ./afl-showmap -m none -q -o .test-instr0 ./test-instr
-)B[?25h[0m[1;91m
-[-] PROGRAM ABORT : [1;97mUnable to execute './test-instr'[1;91m
-         Location : [0mrun_target(), afl-showmap.c:327
+==> Downloading https://docs.google.com/uc?export=download&id=0BwQlnXqL939ZQjBQNEhRQUo0aUk
+==> Downloading https://github.com/vfx01j/afsctool/commit/26293a3809c9ad1db5f9bff9dffaefb8e201a089.diff?full_index=1
+==> Patching
+==> Applying 26293a3809c9ad1db5f9bff9dffaefb8e201a089.diff
+patching file afsctool_34/afsctool.c
+==> gcc-7  -lz afsctool.c -framework CoreServices -o afsctool
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/afsctool/01.gcc-7:
+2017-09-20 14:05:13 -0700
 
-Makefile:90: recipe for target 'test_build' failed
-make: *** [test_build] Error 1
+gcc-7
+
+-lz
+afsctool.c
+-framework
+CoreServices
+-o
+afsctool
+
+gcc-7: error: : No such file or directory
+gcc-7: error: CoreServices: No such file or directory
+gcc-7: error: unrecognized command line option ‘-framework’
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
