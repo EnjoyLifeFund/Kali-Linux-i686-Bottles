@@ -1,15 +1,15 @@
-==> Downloading https://github.com/amadvance/advancescan/releases/download/v1.18/advancescan-1.18.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/40196595/687a5950-40ce-11e5-97fb-58d11fe0d41f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20170920T210014Z&X-Amz-Expires=300&X-Amz-Signature=2714a9e1b55f507f838fe2674be9bec79e8a45dfea09e409bbcac24d5a79695c&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dadvancescan-1.18.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --disable-silent-rules --prefix=/home/linuxbrew/.linuxbrew/Cellar/advancescan/1.18
-==> make install
+==> Downloading https://aescrypt.sourceforge.io/aescrypt-0.7.tar.gz
+==> Downloading from http://aescrypt.sourceforge.net/aescrypt-0.7.tar.gz
+==> ./configure
+==> make
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall advancescan`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/advancescan/1.18: 10 files, 5.5MB, built in 57 seconds
-==> Determining advancescan bottle rebuild...
-==> Bottling advancescan-1.18.i686_linux.bottle.1.tar.gz...
-==> Detecting if advancescan-1.18.i686_linux.bottle.1.tar.gz is relocatable...
-./advancescan-1.18.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall aescrypt`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/aescrypt/0.7: 8 files, 120.2KB, built in 9 seconds
+==> Determining aescrypt bottle rebuild...
+==> Bottling aescrypt-0.7.i686_linux.bottle.1.tar.gz...
+./aescrypt-0.7.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "4bd4079b755c261c76c1fbe2cd0c0f7cf56649063113d64782e73b7337d0bb02" => :i686_linux
+    sha256 "ea587dc1ca543ae64ed898d6e0be7d344adb44152c83f0e98ec9cf27ac2a3d14" => :i686_linux
   end
