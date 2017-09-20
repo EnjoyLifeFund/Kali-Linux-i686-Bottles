@@ -1,25 +1,4 @@
-==> Installing dependencies for apachetop: pcre
-==> Installing apachetop dependency: pcre
-==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/pcre-8.41.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/pcre/01.configure:
-checking for gzopen in -lz... yes
-checking bzlib.h usability... no
-checking bzlib.h presence... no
-checking for bzlib.h... no
-checking for libbz2... no
-checking for the pthreads library -lpthreads... no
-checking whether pthreads work without any flags... no
-checking whether pthreads work with -Kthread... no
-checking whether pthreads work with -kthread... no
-checking for the pthreads library -llthread... no
-checking whether pthreads work with -pthread... yes
-checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
-checking if more special flags are required for pthreads... no
-checking for PTHREAD_PRIO_INHERIT... yes
-** Cannot --enable-pcregrep-libbz2 because bzlib.h was not found
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading https://www.apache.org/dyn/closer.lua?path=zeppelin/zeppelin-0.7.2/zeppelin-0.7.2-bin-all.tgz
+==> Best Mirror http://mirror.cc.columbia.edu/pub/software/apache/zeppelin/zeppelin-0.7.2/zeppelin-0.7.2-bin-all.tgz
+🍺  /home/linuxbrew/.linuxbrew/Cellar/apache-zeppelin/0.7.2: 1,786 files, 807.6MB, built in 30 minutes 34 seconds
+This formula doesn't require compiling.
