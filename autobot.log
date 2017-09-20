@@ -1,11 +1,15 @@
-==> Downloading https://www.mirrorservice.org/sites/ftp.cs.vu.nl/pub/minix/distfiles/backup/acme091src.tar.gz
-==> make -C src install BINDIR=/home/linuxbrew/.linuxbrew/Cellar/acme/0.91/bin
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall acme`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/acme/0.91: 17 files, 234.5KB, built in 6 seconds
-==> Determining acme bottle rebuild...
-==> Bottling acme-0.91.i686_linux.bottle.tar.gz...
-./acme-0.91.i686_linux.bottle.tar.gz
-  bottle do
-    sha256 "60089e5997f266b7d361dff7b9b1ee3c800fbde200f616dc16489ee0c02a225b" => :i686_linux
-  end
+==> Installing dependencies for acmetool: git, go
+==> Installing acmetool dependency: git
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
+2017-09-20 13:37:30 -0700
+
+./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
+--with-curl 
+
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
