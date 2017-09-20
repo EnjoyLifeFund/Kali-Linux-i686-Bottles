@@ -1,15 +1,23 @@
-==> Downloading https://liba52.sourceforge.io/files/a52dec-0.7.4.tar.gz
-==> Downloading from http://liba52.sourceforge.net/files/a52dec-0.7.4.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/a52dec/0.7.4 --enable-shared --mandir=/home/linuxbrew/.linuxbrew/Cellar/a52dec/0.7.4/share/man
+==> Downloading http://aacgain.altosdesign.com/alvarez/aacgain-1.8.tar.bz2
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/aacgain/1.8
 ==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall a52dec`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/a52dec/0.7.4: 21 files, 244.2KB, built in 18 seconds
-==> Determining a52dec bottle rebuild...
-==> Bottling a52dec-0.7.4.i686_linux.bottle.1.tar.gz...
-./a52dec-0.7.4.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "58cb1dc0340683d3c636e7622dee505316a3a7c2dc1c8f960240f7c1c1087c78" => :i686_linux
-  end
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/aacgain/02.make:
+In file included from bits.c:28:0:
+common.h:307:23: note: previous definition of ‘lrintf’ was here
+     static INLINE int lrintf(float f)
+                       ^~~~~~
+Makefile:324: recipe for target 'cfft.lo' failed
+make[1]: *** [cfft.lo] Error 1
+Makefile:324: recipe for target 'ic_predict.lo' failed
+make[1]: *** [ic_predict.lo] Error 1
+Makefile:324: recipe for target 'bits.lo' failed
+make[1]: *** [bits.lo] Error 1
+Makefile:324: recipe for target 'filtbank.lo' failed
+make[1]: *** [filtbank.lo] Error 1
+make[1]: Leaving directory '/tmp/aacgain-20170920-363-16irq0s/aacgain-1.8/faad2/libfaad'
+Makefile:263: recipe for target 'install-recursive' failed
+make: *** [install-recursive] Error 1
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
