@@ -1,13 +1,14 @@
-==> Downloading https://ftp.isc.org/isc/aggregate/aggregate-1.6.tar.gz
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/aggregate/1.6
-==> make CFLAGS= LDFLAGS= install
+==> Downloading https://github.com/theZiz/aha/archive/0.4.10.6.tar.gz
+==> Downloading from https://codeload.github.com/theZiz/aha/tar.gz/0.4.10.6
+==> make install PREFIX=/home/linuxbrew/.linuxbrew/Cellar/aha/0.4.10.6
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall aggregate`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/aggregate/1.6: 9 files, 51.2KB, built in 1 second
-==> Determining aggregate bottle rebuild...
-==> Bottling aggregate-1.6.i686_linux.bottle.tar.gz...
-./aggregate-1.6.i686_linux.bottle.tar.gz
+You can run it manually using `brew postinstall aha`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/aha/0.4.10.6: 6 files, 51.2KB, built in 7 seconds
+==> Determining aha bottle rebuild...
+==> Bottling aha-0.4.10.6.i686_linux.bottle.1.tar.gz...
+./aha-0.4.10.6.i686_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "cf610dca661aaa0a29991d47ce487f4cc86fb4c25f69d2de10e9931a06682912" => :i686_linux
+    rebuild 1
+    sha256 "5f5bd88d3fcf249bee9cc01c7ecd7485a93ff412090b3ad285b44eaf8da2ad5a" => :i686_linux
   end
