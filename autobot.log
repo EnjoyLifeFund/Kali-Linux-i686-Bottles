@@ -1,24 +1,20 @@
-==> Installing dependencies for afuse: libfuse
-==> Installing afuse dependency: libfuse
-==> Downloading https://github.com/libfuse/libfuse/archive/fuse_2_9_5.tar.gz
-==> Downloading from https://codeload.github.com/libfuse/libfuse/tar.gz/fuse_2_9_5
-==> ./makeconf.sh
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/libfuse/01.makeconf.sh:
-./makeconf.sh
+==> Installing dependencies for agda: emacs, git, ghc, cabal-install
+==> Installing agda dependency: emacs
+==> Downloading https://ftp.gnu.org/gnu/emacs/emacs-25.3.tar.xz
+==> ./configure --disable-silent-rules --enable-locallisppath=/home/linuxbrew/.linuxbrew/share/emacs/site-lisp --infodir=/home/linuxbrew/.linuxbrew/Cellar/emacs/25.3/share/info/emacs --prefix=/home/linuxbrew/.linuxbrew/Cellar/emacs/25.3 --without-x --with-xml2 --without-dbus --without-gnutls --without-imagemagick --without-ns
+==> make
+==> make install
+🍺  /home/linuxbrew/.linuxbrew/Cellar/emacs/25.3: 4,043 files, 104.2MB, built in 6 minutes 47 seconds
+==> Installing agda dependency: git
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
+2017-09-20 14:17:13 -0700
 
-Running libtoolize...
-libtoolize: putting auxiliary files in '.'.
-libtoolize: copying file './ltmain.sh'
-libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
-libtoolize: copying file 'm4/libtool.m4'
-libtoolize: copying file 'm4/ltoptions.m4'
-libtoolize: copying file 'm4/ltsugar.m4'
-libtoolize: copying file 'm4/ltversion.m4'
-libtoolize: copying file 'm4/lt~obsolete.m4'
-Running autoreconf...
-Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN2> line 5.
-autoreconf: failed to run glibtoolize: No such file or directory
-autoreconf: glibtoolize is needed because this package uses Libtool
+./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
+--with-curl 
+
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
