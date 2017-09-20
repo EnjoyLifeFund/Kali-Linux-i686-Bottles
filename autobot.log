@@ -1,28 +1,15 @@
-==> Installing dependencies for airspy: cmake, docbook-xsl, libcap, systemd, libusb
-==> Installing airspy dependency: cmake
-==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/cmake-3.9.2.tar.gz
-==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.9.2 --no-system-libs --parallel=8 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/cmake/01.bootstrap:
--- Performing Test run_inlines_hidden_test - Success
-You must: brew install svn
--- Warning, could not run java -version
-CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
-Please set them or make sure they are set and tested correctly in the CMake files:
-BZIP2_LIBRARY
-    linked by target "CMakeLib" in directory /tmp/cmake-20170920-14565-molirm/cmake-3.9.2/Source
+==> Installing dependencies for akamai: git, go, glide
+==> Installing akamai dependency: git
+==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.14.1.tar.xz
+Already downloaded: /home/kali/.cache/Homebrew/git-2.14.1.tar.xz
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1 --with-curl
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/git/01.2.14.1:
+2017-09-20 14:27:14 -0700
 
--- Configuring incomplete, errors occurred!
-See also "/tmp/cmake-20170920-14565-molirm/cmake-3.9.2/CMakeFiles/CMakeOutput.log".
-See also "/tmp/cmake-20170920-14565-molirm/cmake-3.9.2/CMakeFiles/CMakeError.log".
----------------------------------------------
-Error when bootstrapping CMake:
-Problem while running initial CMake
----------------------------------------------
+./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/git/2.14.1
+--with-curl 
+
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
 
-These open issues may also help:
-Cyclic dependency involving cmake and curl https://github.com/Linuxbrew/homebrew-core/issues/3348
-portmidi: Use cmake for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/857
