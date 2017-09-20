@@ -1,9 +1,0 @@
-==> Downloading https://github.com/vigo/apm-bash-completion/archive/1.0.0.tar.gz
-==> Downloading from https://codeload.github.com/vigo/apm-bash-completion/tar.gz/1.0.0
-==> Caveats
-Bash completion has been installed to:
-  /home/linuxbrew/.linuxbrew/etc/bash_completion.d
-
-==> Summary
-🍺  /home/linuxbrew/.linuxbrew/Cellar/apm-bash-completion/1.0.0: 4 files, 20.2KB, built in 4 seconds
-This formula doesn't require compiling.
