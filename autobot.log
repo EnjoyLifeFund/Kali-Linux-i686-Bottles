@@ -1,25 +1,16 @@
-==> Installing dependencies for antigen: pcre, zsh
-==> Installing antigen dependency: pcre
-==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/pcre-8.41.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/pcre/01.configure:
-checking for gzopen in -lz... yes
-checking bzlib.h usability... no
-checking bzlib.h presence... no
-checking for bzlib.h... no
-checking for libbz2... no
-checking for the pthreads library -lpthreads... no
-checking whether pthreads work without any flags... no
-checking whether pthreads work with -Kthread... no
-checking whether pthreads work with -kthread... no
-checking for the pthreads library -llthread... no
-checking whether pthreads work with -pthread... yes
-checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
-checking if more special flags are required for pthreads... no
-checking for PTHREAD_PRIO_INHERIT... yes
-** Cannot --enable-pcregrep-libbz2 because bzlib.h was not found
+==> Downloading http://www.winfield.demon.nl/linux/antiword-0.37.tar.gz
+==> make CC=gcc-7 LD=gcc-7 CFLAGS= -DNDEBUG GLOBAL_INSTALL_DIR=/home/linuxbrew/.linuxbrew/Cellar/antiword/0.37/bin GLOBAL_RESOURCES_DIR=/home/linuxbrew/.linuxbrew/Cellar/antiword/0.37/share/antiword
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall antiword`
+==> Caveats
+You can install mapping files in ~/.antiword
 
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Summary
+🍺  /home/linuxbrew/.linuxbrew/Cellar/antiword/0.37: 40 files, 653KB, built in 6 seconds
+==> Determining antiword bottle rebuild...
+==> Bottling antiword-0.37.i686_linux.bottle.1.tar.gz...
+./antiword-0.37.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "25731a5f1b524ae30fe1374b7c5b4dd89a706f0f80d4d66baad26f41aea89946" => :i686_linux
+  end
