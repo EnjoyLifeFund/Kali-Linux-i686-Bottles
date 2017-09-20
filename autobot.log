@@ -1,0 +1,31 @@
+==> Installing dependencies for abcde: cd-discid, smake, cdrtools, id3lib, id3v2, mkcue
+==> Installing abcde dependency: cd-discid
+==> Downloading http://linukz.org/download/cd-discid-1.4.tar.gz
+==> Patching
+patching file cd-discid.c
+==> make CC=gcc-7
+🍺  /home/linuxbrew/.linuxbrew/Cellar/cd-discid/1.4_2: 7 files, 68.1KB, built in 2 seconds
+==> Installing abcde dependency: smake
+==> Downloading https://downloads.sourceforge.net/project/s-make/smake-1.2.5.tar.bz2
+==> Downloading from https://cytranet.dl.sourceforge.net/project/s-make/smake-1.2.5.tar.bz2
+==> make GMAKE_NOWARN=true INS_BASE=/home/linuxbrew/.linuxbrew/Cellar/smake/1.2.5/libexec INS_RBASE=/home/linuxbrew/.linuxbrew/Cellar/smake/1.2.5/libexec install
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/smake/01.make:
+checking for regex.h... yes
+checking for regexp.h... no
+checking for regexpr.h... no
+checking for dlfcn.h... yes
+checking for link.h... yes
+checking for dl.h... no
+checking for expat.h... yes
+checking for header file containing  major(), minor() and makedev()... sys/sysmacros.h
+checking bits in minor device number... configure: error: can not run test program while cross compiling
+smake: Operation not permitted. *** Code 1 from command line for target 'incs/i686-linux-cc/rules.cnf'.
+smake: The following command caused the error:
+echo "	==> CONFIGURING RULES \"incs/i686-linux-cc/rules.cnf\""; /bin/rm -f incs/i686-linux-cc/rules.cnf;  cd incs/i686-linux-cc;  CONFIG_NOFAIL=TRUE CC="gcc" CFLAGS="  -O  "  CXXFLAGS="  -O  " CPPFLAGS="  -D_GNU_SOURCE "  LDFLAGS="-Llibs/i686-linux-cc -L/opt/schily/lib -Wl,-R/home/linuxbrew/.linuxbrew/Cellar/smake/1.2.5/libexec/lib -Wl,-R/opt/schily/lib" sh ../../autoconf/configure 
+smake: No such file or directory. Can not open 'incs/i686-linux-cc/rules.cnf'.
+Makefile:11: recipe for target 'install' failed
+make: *** [install] Error 2
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
