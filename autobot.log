@@ -1,21 +1,12 @@
-==> Downloading https://github.com/sshock/AFFLIBv3/archive/v3.7.16.tar.gz
-==> Downloading from https://codeload.github.com/sshock/AFFLIBv3/tar.gz/v3.7.16
-==> autoreconf -fiv
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/afflib/01.autoreconf:
-2017-09-20 14:03:25 -0700
-
-autoreconf
--fiv
-
-autoreconf: Entering directory `.'
-autoreconf: configure.ac: not using Gettext
-autoreconf: running: aclocal --force -I m4
-autoreconf: configure.ac: tracing
-autoreconf: running: glibtoolize --copy --force
-Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN2> line 5.
-autoreconf: failed to run glibtoolize: No such file or directory
-autoreconf: glibtoolize is needed because this package uses Libtool
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Downloading http://members.chello.nl/~k.holtman/afio-2.5.1.tgz
+==> make DESTDIR=/home/linuxbrew/.linuxbrew/Cellar/afio/2.5.1
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall afio`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/afio/2.5.1: 26 files, 239.4KB, built in 10 seconds
+==> Determining afio bottle rebuild...
+==> Bottling afio-2.5.1.i686_linux.bottle.1.tar.gz...
+./afio-2.5.1.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "507312ab62faaa6959de0f3e26e228188fab2f9f803b2189a7ac053978246ceb" => :i686_linux
+  end
