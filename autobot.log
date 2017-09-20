@@ -1,22 +1,23 @@
-==> Installing dependencies for analog: fontconfig, gd
-==> Installing analog dependency: fontconfig
-==> Downloading https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.5.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/fontconfig-2.12.5.tar.bz2
-==> autoreconf -iv
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/fontconfig/01.autoreconf:
-2017-09-20 14:52:24 -0700
-
-autoreconf
--iv
-
-autoreconf: Entering directory `.'
-autoreconf: configure.ac: not using Gettext
-autoreconf: running: aclocal -I m4
-autoreconf: configure.ac: tracing
-autoreconf: running: glibtoolize --copy
-Can't exec "glibtoolize": No such file or directory at /home/linuxbrew/.linuxbrew/Cellar/autoconf/2.69/share/autoconf/Autom4te/FileUtils.pm line 345, <GEN3> line 4.
-autoreconf: failed to run glibtoolize: No such file or directory
-autoreconf: glibtoolize is needed because this package uses Libtool
+==> Downloading http://rephial.org/downloads/4.1/angband-4.1.0.tar.gz
+==> ./autogen.sh
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/angband/4.1.0 --bindir=/home/linuxbrew/.linuxbrew/Cellar/angband/4.1.0/bin --libdir=/home/linuxbrew/.linuxbrew/Cellar/angband/4.1.0/libexec --enable-curses --disable-ncursestest --disable-sdltest --disable-x11 --with-ncurses-prefix=/usr
+==> make
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/angband/03.make:
+[K[32mSuccessfully compiled [1mz-util.c[m[32m.[m
+[K[32mSuccessfully compiled [1mbuildid.c[m[32m.[m
+ld: -r and -pie may not be used together
+collect2: error: ld returned 1 exit status
+Makefile:34: recipe for target 'angband.o' failed
+make[3]: *** [angband.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+[K[32mSuccessfully compiled [1mmain.c[m[32m.[m
+[K[32mSuccessfully compiled [1mmain-gcu.c[m[32m.[m
+../mk/buildsys.mk:110: recipe for target 'all' failed
+make[2]: *** [all] Error 2
+mk/buildsys.mk:115: recipe for target 'subdirs' failed
+make[1]: *** [subdirs] Error 2
+mk/buildsys.mk:110: recipe for target 'all' failed
+make: *** [all] Error 2
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
