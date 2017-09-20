@@ -1,8 +1,31 @@
-==> Determining zlib bottle rebuild...
-==> Bottling zlib-1.2.11.i686_linux.bottle.1.tar.gz...
-./zlib-1.2.11.i686_linux.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+elasticsearch
+filebeat
+gtkmm3
+kibana
+logstash
+mercurial
+metricbeat
+packetbeat
+taylor
+tor
+
+==> Downloading https://ftp.gnu.org/gnu/a2ps/a2ps-4.14.tar.gz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/0ae366e6/a2ps/patch-lib__xstrrpl.c
+==> Patching
+==> Applying patch-lib__xstrrpl.c
+patching file lib/xstrrpl.c
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/a2ps/4.14 --sysconfdir=/home/linuxbrew/.linuxbrew/etc --with-lispdir=/home/linuxbrew/.linuxbrew/Cellar/a2ps/4.14/share/emacs/site-lisp/a2ps
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall a2ps`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/a2ps/4.14: 295 files, 6.0MB, built in 2 minutes 36 seconds
+==> Determining a2ps bottle rebuild...
+==> Bottling a2ps-4.14.i686_linux.bottle.tar.gz...
+==> Detecting if a2ps-4.14.i686_linux.bottle.tar.gz is relocatable...
+./a2ps-4.14.i686_linux.bottle.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "2e939f8dd57a738dccc72f7ca1061f23ab919b7792646e521aa33de4737840c6" => :i686_linux
+    sha256 "1ac57540f331c728ded55503a2bf822ae42622bab2161cddd6ae3780ad3aaab6" => :i686_linux
   end
