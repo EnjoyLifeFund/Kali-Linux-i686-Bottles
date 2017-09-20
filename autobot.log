@@ -1,24 +1,28 @@
-==> Downloading https://download.aircrack-ng.org/aircrack-ng-1.1.tar.gz
-==> Patching
-patching file scripts/airodump-ng-oui-update
-==> make CC=gcc-7
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/aircrack-ng/01.make:
-cc1: all warnings being treated as errors
-<builtin>: recipe for target 'linux.o' failed
-make[3]: *** [linux.o] Error 1
-make[3]: Leaving directory '/tmp/aircrack-ng-20170920-12574-qh6rou/aircrack-ng-1.1/src/osdep'
-Makefile:31: recipe for target 'all' failed
-make[2]: *** [all] Error 2
-make[2]: Leaving directory '/tmp/aircrack-ng-20170920-12574-qh6rou/aircrack-ng-1.1/src/osdep'
-Makefile:122: recipe for target 'osd' failed
-make[1]: *** [osd] Error 2
-cc1: all warnings being treated as errors
-<builtin>: recipe for target 'aircrack-ng.o' failed
-make[1]: *** [aircrack-ng.o] Error 1
-make[1]: *** wait: No child processes.  Stop.
-Makefile:18: recipe for target 'all' failed
-make: *** [all] Error 2
+==> Installing dependencies for airspy: cmake, docbook-xsl, libcap, systemd, libusb
+==> Installing airspy dependency: cmake
+==> Downloading https://cmake.org/files/v3.9/cmake-3.9.2.tar.gz
+Already downloaded: /home/kali/.cache/Homebrew/cmake-3.9.2.tar.gz
+==> ./bootstrap --prefix=/home/linuxbrew/.linuxbrew/Cellar/cmake/3.9.2 --no-system-libs --parallel=8 --datadir=/share/cmake --docdir=/share/doc/cmake --mandir=/share/man --system-zlib --system-bzip2 --system-curl --sphinx-man --sphinx-build=/home/linuxbrew/.linuxbrew/opt/sphinx-doc/bin/sphinx-build
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/cmake/01.bootstrap:
+-- Performing Test run_inlines_hidden_test - Success
+You must: brew install svn
+-- Warning, could not run java -version
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+BZIP2_LIBRARY
+    linked by target "CMakeLib" in directory /tmp/cmake-20170920-14565-molirm/cmake-3.9.2/Source
+
+-- Configuring incomplete, errors occurred!
+See also "/tmp/cmake-20170920-14565-molirm/cmake-3.9.2/CMakeFiles/CMakeOutput.log".
+See also "/tmp/cmake-20170920-14565-molirm/cmake-3.9.2/CMakeFiles/CMakeError.log".
+---------------------------------------------
+Error when bootstrapping CMake:
+Problem while running initial CMake
+---------------------------------------------
 
 READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
 Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
 
+These open issues may also help:
+Cyclic dependency involving cmake and curl https://github.com/Linuxbrew/homebrew-core/issues/3348
+portmidi: Use cmake for Linuxbrew https://github.com/Linuxbrew/homebrew-core/pull/857
