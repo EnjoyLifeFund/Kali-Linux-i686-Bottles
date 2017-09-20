@@ -1,14 +1,14 @@
-==> Downloading https://github.com/leesavide/abcm2ps/archive/v8.13.15.tar.gz
-==> Downloading from https://codeload.github.com/leesavide/abcm2ps/tar.gz/v8.13.15
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/abcm2ps/8.13.15
+==> Downloading http://www.ifdo.ca/~seymour/runabc/abcMIDI-2017.09.12.zip
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12 --mandir=/home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12/share/man
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall abcm2ps`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/abcm2ps/8.13.15: 24 files, 1.2MB, built in 12 seconds
-==> Determining abcm2ps bottle rebuild...
-==> Bottling abcm2ps-8.13.15.i686_linux.bottle.1.tar.gz...
-./abcm2ps-8.13.15.i686_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall abcmidi`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/abcmidi/2017-09-12: 26 files, 1.3MB, built in 13 seconds
+==> Determining abcmidi bottle rebuild...
+==> Bottling abcmidi-2017-09-12.i686_linux.bottle.1.tar.gz...
+./abcmidi-2017-09-12.i686_linux.bottle.1.tar.gz
   bottle do
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "ea837e7a2cb32c8342422e3a05fd91d73c86c8bd51a80f3d9e6d7c1c3d2a0f2f" => :i686_linux
+    sha256 "af4e5d6c8d745bff03647c8f140c19f82412ab516ec2cb25868b82b0b06d5e90" => :i686_linux
   end
