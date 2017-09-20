@@ -1,12 +1,22 @@
-==> Downloading http://members.chello.nl/~k.holtman/afio-2.5.1.tgz
-==> make DESTDIR=/home/linuxbrew/.linuxbrew/Cellar/afio/2.5.1
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall afio`
-🍺  /home/linuxbrew/.linuxbrew/Cellar/afio/2.5.1: 26 files, 239.4KB, built in 10 seconds
-==> Determining afio bottle rebuild...
-==> Bottling afio-2.5.1.i686_linux.bottle.1.tar.gz...
-./afio-2.5.1.i686_linux.bottle.1.tar.gz
-  bottle do
-    rebuild 1
-    sha256 "507312ab62faaa6959de0f3e26e228188fab2f9f803b2189a7ac053978246ceb" => :i686_linux
-  end
+==> Downloading http://lcamtuf.coredump.cx/afl/releases/afl-2.51b.tgz
+==> make PREFIX=/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b
+Last 15 lines from /home/kali/.cache/Homebrew/Logs/afl-fuzz/01.make:
+gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-showmap.c -o afl-showmap -ldl
+gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-tmin.c -o afl-tmin -ldl
+gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-gotcpu.c -o afl-gotcpu -ldl
+gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-analyze.c -o afl-analyze -ldl
+gcc-7 -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" afl-as.c -o afl-as -ldl
+ln -sf afl-as as
+[*] Testing the CC wrapper and instrumentation output...
+unset AFL_USE_ASAN AFL_USE_MSAN; AFL_QUIET=1 AFL_INST_RATIO=100 AFL_PATH=. ./afl-gcc -O3 -funroll-loops -Wall -D_FORTIFY_SOURCE=2 -g -Wno-pointer-sign -DAFL_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/lib/afl\" -DDOC_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/share/doc/afl\" -DBIN_PATH=\"/home/linuxbrew/.linuxbrew/Cellar/afl-fuzz/2.51b/bin\" test-instr.c -o test-instr -ldl
+echo 0 | ./afl-showmap -m none -q -o .test-instr0 ./test-instr
+)B[?25h[0m[1;91m
+[-] PROGRAM ABORT : [1;97mUnable to execute './test-instr'[1;91m
+         Location : [0mrun_target(), afl-showmap.c:327
+
+Makefile:90: recipe for target 'test_build' failed
+make: *** [test_build] Error 1
+
+READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
+Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
+
