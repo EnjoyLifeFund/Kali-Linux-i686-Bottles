@@ -1,5 +1,5 @@
-==> Installing dependencies for apache-arrow: perl, cmake, boost, jemalloc, ccache
-==> Installing apache-arrow dependency: perl
+==> Installing dependencies for apache-brooklyn-cli: perl, git, go, glide
+==> Installing apache-brooklyn-cli dependency: perl
 ==> Downloading https://www.cpan.org/src/5.0/perl-5.26.0.tar.xz
 Already downloaded: /home/kali/.cache/Homebrew/perl-5.26.0.tar.xz
 ==> ./Configure -des -Dprefix=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1 -Dprivlib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/5.26.0 -Dsitelib=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/lib/perl5/site_perl/5.26.0 -Dotherlibdirs=/home/linuxbrew/.linuxbrew/lib/perl5/site_perl/5.26.0 -Dperlpath=/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/linuxbrew/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man1 -Dman3dir=/home/linuxbrew/.linuxbrew/Cellar/perl/5.26.0_1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/linuxbrew/.linuxbrew/include
