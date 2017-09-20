@@ -1,23 +1,27 @@
-==> Downloading http://aacgain.altosdesign.com/alvarez/aacgain-1.8.tar.bz2
-==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/aacgain/1.8
+==> Downloading https://downloads.sourceforge.net/aa-project/aalib-1.4rc5.tar.gz
+==> Downloading from https://versaweb.dl.sourceforge.net/project/aa-project/aa-lib/1.4rc5/aalib-1.4rc5.tar.gz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/6e23dfb/aalib/1.4rc5.patch
+==> Patching
+==> Applying 1.4rc5.patch
+patching file src/aaedit.c
+patching file src/aakbdreg.c
+patching file src/aalib.c
+patching file src/aamoureg.c
+patching file src/aarec.c
+patching file src/aaregist.c
+patching file src/aax.c
+patching file src/aaxkbd.c
+patching file src/aaxmouse.c
+patching file aalib.m4
+==> ./configure --prefix=/home/linuxbrew/.linuxbrew/Cellar/aalib/1.4rc5_1 --mandir=/home/linuxbrew/.linuxbrew/Cellar/aalib/1.4rc5_1/share/man --infodir=/home/linuxbrew/.linuxbrew/Cellar/aalib/1.4rc5_1/share/info --enable-shared=yes --enable-static=yes --without-x
 ==> make install
-Last 15 lines from /home/kali/.cache/Homebrew/Logs/aacgain/02.make:
-In file included from bits.c:28:0:
-common.h:307:23: note: previous definition of ‘lrintf’ was here
-     static INLINE int lrintf(float f)
-                       ^~~~~~
-Makefile:324: recipe for target 'cfft.lo' failed
-make[1]: *** [cfft.lo] Error 1
-Makefile:324: recipe for target 'ic_predict.lo' failed
-make[1]: *** [ic_predict.lo] Error 1
-Makefile:324: recipe for target 'bits.lo' failed
-make[1]: *** [bits.lo] Error 1
-Makefile:324: recipe for target 'filtbank.lo' failed
-make[1]: *** [filtbank.lo] Error 1
-make[1]: Leaving directory '/tmp/aacgain-20170920-363-16irq0s/aacgain-1.8/faad2/libfaad'
-Makefile:263: recipe for target 'install-recursive' failed
-make: *** [install-recursive] Error 1
-
-READ THIS: https://github.com/Linuxbrew/brew/blob/master/docs/Troubleshooting.md#troubleshooting
-Please do not report this issue to Homebrew/brew or Homebrew/core, which support macOS only.
-
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall aalib`
+🍺  /home/linuxbrew/.linuxbrew/Cellar/aalib/1.4rc5_1: 86 files, 1.4MB, built in 23 seconds
+==> Determining aalib bottle rebuild...
+==> Bottling aalib-1.4rc5_1.i686_linux.bottle.1.tar.gz...
+./aalib-1.4rc5_1.i686_linux.bottle.1.tar.gz
+  bottle do
+    rebuild 1
+    sha256 "3b0875e4a12cc0da70ce76651c41b687f0778ce93f9dff163239401e6c65cd70" => :i686_linux
+  end
