@@ -1,19 +1,9 @@
-==> Upgrading 1 outdated package, with result:
-parallel 20170922
-==> Upgrading parallel 
-==> Downloading https://ftp.gnu.org/gnu/parallel/parallel-20170922.tar.bz2
-Already downloaded: /home/kali/.cache/Homebrew/parallel-20170922.tar.bz2
-==> ./configure --prefix=/usr/local/Cellar/parallel/20170922
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall parallel`
-🍺  /usr/local/Cellar/parallel/20170922: 61 files, 3MB, built in 7 seconds
-==> Determining parallel bottle rebuild...
-==> Bottling parallel-20170922.i686_linux.bottle.1.tar.gz...
-==> Detecting if parallel-20170922.i686_linux.bottle.1.tar.gz is relocatable...
-./parallel-20170922.i686_linux.bottle.1.tar.gz
+==> Determining bzip2 bottle rebuild...
+==> Bottling bzip2-1.0.6_1.i686_linux.bottle.1.tar.gz...
+./bzip2-1.0.6_1.i686_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/usr/local"
+    cellar "/usr/local/Cellar"
     rebuild 1
-    sha256 "731315f0066df965d9e79276b9c9ca5bcaa4d0a7694a7b514d662edd5142f642" => :i686_linux
+    sha256 "1bb20a0c7a6f53a465695b3a5b9b69e4a8b83726c6b60e228a9dd0840397f169" => :i686_linux
   end
