@@ -1,9 +1,60 @@
-==> Determining bzip2 bottle rebuild...
-==> Bottling bzip2-1.0.6_1.i686_linux.bottle.1.tar.gz...
-./bzip2-1.0.6_1.i686_linux.bottle.1.tar.gz
+==> Downloading https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/unzip60.tar.gz
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/u/unzip/unzip_6.0-21.debian.tar.xz
+==> Patching
+==> Applying patches/01-manpages-in-section-1-not-in-section-1l.patch
+patching file man/funzip.1
+patching file man/unzip.1
+patching file man/unzipsfx.1
+patching file man/zipgrep.1
+patching file man/zipinfo.1
+==> Applying patches/02-this-is-debian-unzip.patch
+patching file unzip.c
+==> Applying patches/03-include-unistd-for-kfreebsd.patch
+patching file unix/unxcfg.h
+==> Applying patches/04-handle-pkware-verification-bit.patch
+patching file process.c
+==> Applying patches/05-fix-uid-gid-handling.patch
+patching file process.c
+==> Applying patches/06-initialize-the-symlink-flag.patch
+patching file process.c
+==> Applying patches/07-increase-size-of-cfactorstr.patch
+patching file list.c
+==> Applying patches/08-allow-greater-hostver-values.patch
+patching file zipinfo.c
+==> Applying patches/09-cve-2014-8139-crc-overflow.patch
+patching file extract.c
+==> Applying patches/10-cve-2014-8140-test-compr-eb.patch
+patching file extract.c
+==> Applying patches/11-cve-2014-8141-getzip64data.patch
+patching file fileio.c
+patching file process.c
+==> Applying patches/12-cve-2014-9636-test-compr-eb.patch
+patching file extract.c
+==> Applying patches/13-remove-build-date.patch
+patching file unix/unix.c
+==> Applying patches/14-cve-2015-7696.patch
+patching file crypt.c
+==> Applying patches/15-cve-2015-7697.patch
+patching file extract.c
+==> Applying patches/16-fix-integer-underflow-csiz-decrypted.patch
+patching file extract.c
+==> Applying patches/17-restore-unix-timestamps-accurately.patch
+patching file process.c
+==> Applying patches/18-cve-2014-9913-unzip-buffer-overflow.patch
+patching file list.c
+==> Applying patches/19-cve-2016-9844-zipinfo-buffer-overflow.patch
+patching file zipinfo.c
+==> make -f unix/Makefile CC=cc LOC=-DLARGE_FILE_SUPPORT D_USE_BZ2=-DUSE_BZIP2 L_BZ2=-lbz2 macosx
+==> make prefix=/usr/local/Cellar/unzip/6.0_3 MANDIR=/usr/local/Cellar/unzip/6.0_3/share/man/man1 install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall unzip`
+🍺  /usr/local/Cellar/unzip/6.0_3: 15 files, 455.7KB, built in 19 seconds
+==> Determining unzip bottle rebuild...
+==> Bottling unzip-6.0_3.i686_linux.bottle.1.tar.gz...
+./unzip-6.0_3.i686_linux.bottle.1.tar.gz
   bottle do
-    prefix "/usr/local"
-    cellar "/usr/local/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "1bb20a0c7a6f53a465695b3a5b9b69e4a8b83726c6b60e228a9dd0840397f169" => :i686_linux
+    sha256 "2c234db883baf23fa95d86a2e0e9e4cdabb8c4bb606c3fed0f9c024373fc885c" => :i686_linux
   end
