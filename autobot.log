@@ -1,60 +1,7 @@
-==> Auto-updated Homebrew!
-Updated 3 taps (homebrew/core, homebrew/php, homebrew/science).
-==> Updated Formulae
-baobab
-bnd
-ccm
-convox
-cvs
-dnsmasq
-file-roller
-folly
-freetds
-gdk-pixbuf
-geth
-gjs
-glib
-gobject-introspection
-gphoto2
-gradle
-gtk+3
-gucharmap
-hg-fast-export
-homebrew/php/codeception
-homebrew/php/php56-couchbase
-homebrew/php/php70-couchbase
-homebrew/php/php71-couchbase
-homebrew/php/php72-couchbase
-homebrew/science/abinit
-icdiff
-imagemagick
-imagemagick@6
-kawa
-kerl
-launch
-ldc
-libgphoto2
-libqalculate
-maxima
-mercurial
-minimal-racket
-nexus
-nifi
-openvpn
-p11-kit
-paket
-quantlib
-quex
-sqlmap
-submarine
-teleport
-terraform
-virtualpg
-wireguard-tools
-
 ==> Upgrading 1 outdated package, with result:
-apktool 2.3.0
-==> Upgrading apktool 
-==> Downloading https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.0.jar
-🍺  /usr/local/Cellar/apktool/2.3.0: 4 files, 5.6MB, built in 20 seconds
+tomcat 8.5.23
+==> Upgrading tomcat 
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
+==> Best Mirror http://ftp.tc.edu.tw/pub/Apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
+🍺  /usr/local/Cellar/tomcat/8.5.23: 631 files, 13.2MB, built in 21 seconds
 This formula doesn't require compiling.
