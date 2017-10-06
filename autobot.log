@@ -1,12 +1,8 @@
 ==> Upgrading 1 outdated package, with result:
-apache-geode 1.2.1
-==> Upgrading apache-geode 
-==> Downloading https://www.apache.org/dyn/closer.cgi?path=geode/1.2.1/apache-geode-1.2.1.tar.gz
-==> Best Mirror http://ftp.twaren.net/Unix/Web/apache/geode/1.2.1/apache-geode-1.2.1.tar.gz
-==> Caveats
-Bash completion has been installed to:
-  /usr/local/etc/bash_completion.d
-
-==> Summary
-🍺  /usr/local/Cellar/apache-geode/1.2.1: 821 files, 107.9MB, built in 2 minutes 32 seconds
+apibuilder-cli 0.1.8
+==> Upgrading apibuilder-cli 
+==> Downloading https://github.com/apicollective/apibuilder-cli/archive/0.1.8.tar.gz
+==> Downloading from https://codeload.github.com/apicollective/apibuilder-cli/tar.gz/0.1.8
+==> ./install.sh /usr/local/Cellar/apibuilder-cli/0.1.8
+🍺  /usr/local/Cellar/apibuilder-cli/0.1.8: 17 files, 300.5KB, built in 5 seconds
 This formula doesn't require compiling.
