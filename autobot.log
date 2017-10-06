@@ -1,8 +1,22 @@
 ==> Upgrading 1 outdated package, with result:
-apibuilder-cli 0.1.8
-==> Upgrading apibuilder-cli 
-==> Downloading https://github.com/apicollective/apibuilder-cli/archive/0.1.8.tar.gz
-==> Downloading from https://codeload.github.com/apicollective/apibuilder-cli/tar.gz/0.1.8
-==> ./install.sh /usr/local/Cellar/apibuilder-cli/0.1.8
-🍺  /usr/local/Cellar/apibuilder-cli/0.1.8: 17 files, 300.5KB, built in 5 seconds
-This formula doesn't require compiling.
+intltool 0.51.0_1
+==> Upgrading intltool 
+==> Downloading https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
+==> Downloading from https://launchpadlibrarian.net/199705878/intltool-0.51.0.tar.gz
+==> Downloading https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.44.tar.gz
+==> perl Makefile.PL INSTALL_BASE=/usr/local/Cellar/intltool/0.51.0_1/libexec
+==> make PERL5LIB=/usr/local/Cellar/intltool/0.51.0_1/libexec/lib/perl5
+==> make install
+==> ./configure --prefix=/usr/local/Cellar/intltool/0.51.0_1 --disable-silent-rules
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall intltool`
+🍺  /usr/local/Cellar/intltool/0.51.0_1: 61 files, 919.3KB, built in 17 seconds
+==> Determining intltool bottle rebuild...
+==> Bottling intltool-0.51.0_1.i686_linux.bottle.1.tar.gz...
+./intltool-0.51.0_1.i686_linux.bottle.1.tar.gz
+  bottle do
+    cellar :any_skip_relocation
+    rebuild 1
+    sha256 "a4da8d4cfec40545abcfa2c48304000e28addb06f3259fb9e84455b4fd8be3bd" => :i686_linux
+  end
