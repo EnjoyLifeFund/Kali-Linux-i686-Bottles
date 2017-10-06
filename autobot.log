@@ -1,14 +1,12 @@
-==> Downloading https://launchpad.net/pbzip2/1.1/1.1.13/+download/pbzip2-1.1.13.tar.gz
-Already downloaded: /home/kali/.cache/Homebrew/pbzip2-1.1.13.tar.gz
-==> make PREFIX=/usr/local/Cellar/pbzip2/1.1.13 CC=c++ CFLAGS= PREFIX=/usr/local/Cellar/pbzip2/1.1.13 install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pbzip2`
-🍺  /usr/local/Cellar/pbzip2/1.1.13: 10 files, 318.8KB, built in 6 seconds
-==> Determining pbzip2 bottle rebuild...
-==> Bottling pbzip2-1.1.13.i686_linux.bottle.1.tar.gz...
-./pbzip2-1.1.13.i686_linux.bottle.1.tar.gz
-  bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "4489b1899b4327156cfe0200acb3ab8b2106ec0e42f8c7574d7b3fdf72b54a37" => :i686_linux
-  end
+==> Upgrading 1 outdated package, with result:
+apache-geode 1.2.1
+==> Upgrading apache-geode 
+==> Downloading https://www.apache.org/dyn/closer.cgi?path=geode/1.2.1/apache-geode-1.2.1.tar.gz
+==> Best Mirror http://ftp.twaren.net/Unix/Web/apache/geode/1.2.1/apache-geode-1.2.1.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+==> Summary
+🍺  /usr/local/Cellar/apache-geode/1.2.1: 821 files, 107.9MB, built in 2 minutes 32 seconds
+This formula doesn't require compiling.
